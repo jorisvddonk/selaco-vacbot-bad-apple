@@ -1,0 +1,1920 @@
+sprite BXX1, 172, 172
+{}
+sprite BXX2, 172, 172
+{}
+sprite BXX3, 172, 172
+{}
+sprite BXX4, 172, 172
+{}
+sprite BXX5, 172, 172
+{}
+sprite BXX6, 172, 172
+{}
+sprite BXX7, 172, 172
+{}
+sprite BXX8, 172, 172
+{}
+sprite BXX9, 172, 172
+{}
+sprite BXXA, 172, 172
+{}
+sprite BXXB, 172, 172
+{}
+sprite BXXC, 172, 172
+{}
+sprite BXXD, 172, 172
+{}
+sprite BXXE, 172, 172
+{}
+sprite BXXF, 172, 172
+{}
+sprite BXXG, 172, 172
+{}
+sprite BXXH, 172, 172
+{}
+sprite BXXI, 172, 172
+{}
+sprite BXXJ, 172, 172
+{}
+sprite BXXK, 172, 172
+{}
+sprite BXXL, 172, 172
+{}
+sprite BXXM, 172, 172
+{}
+sprite BXXN, 172, 172
+{}
+sprite BXXO, 172, 172
+{}
+sprite BXXP, 172, 172
+{}
+sprite BXXQ, 172, 172
+{}
+sprite BXXR, 172, 172
+{}
+sprite BXXS, 172, 172
+{}
+sprite BXXT, 172, 172
+{}
+sprite BXXU, 172, 172
+{}
+sprite BXXV, 172, 172
+{}
+sprite BX10, 172, 172
+{}
+sprite BX11, 172, 172
+{}
+sprite BX12, 172, 172
+{}
+sprite BX13, 172, 172
+{}
+sprite BX14, 172, 172
+{}
+sprite BX15, 172, 172
+{}
+sprite BX16, 172, 172
+{}
+sprite BX17, 172, 172
+{}
+sprite BX18, 172, 172
+{}
+sprite BX19, 172, 172
+{}
+sprite BX1A, 172, 172
+{}
+sprite BX1B, 172, 172
+{}
+sprite BX1C, 172, 172
+{}
+sprite BX1D, 172, 172
+{}
+sprite BX1E, 172, 172
+{}
+sprite BX1F, 172, 172
+{}
+sprite BX1G, 172, 172
+{}
+sprite BX1H, 172, 172
+{}
+sprite BX1I, 172, 172
+{}
+sprite BX1J, 172, 172
+{}
+sprite BX1K, 172, 172
+{}
+sprite BX1L, 172, 172
+{}
+sprite BX1M, 172, 172
+{}
+sprite BX1N, 172, 172
+{}
+sprite BX1O, 172, 172
+{}
+sprite BX1P, 172, 172
+{}
+sprite BX1Q, 172, 172
+{}
+sprite BX1R, 172, 172
+{}
+sprite BX1S, 172, 172
+{}
+sprite BX1T, 172, 172
+{}
+sprite BX1U, 172, 172
+{}
+sprite BX1V, 172, 172
+{}
+sprite BX20, 172, 172
+{}
+sprite BX21, 172, 172
+{}
+sprite BX22, 172, 172
+{}
+sprite BX23, 172, 172
+{}
+sprite BX24, 172, 172
+{}
+sprite BX25, 172, 172
+{}
+sprite BX26, 172, 172
+{}
+sprite BX27, 172, 172
+{}
+sprite BX28, 172, 172
+{}
+sprite BX29, 172, 172
+{}
+sprite BX2A, 172, 172
+{}
+sprite BX2B, 172, 172
+{}
+sprite BX2C, 172, 172
+{}
+sprite BX2D, 172, 172
+{}
+sprite BX2E, 172, 172
+{}
+sprite BX2F, 172, 172
+{}
+sprite BX2G, 172, 172
+{}
+sprite BX2H, 172, 172
+{}
+sprite BX2I, 172, 172
+{}
+sprite BX2J, 172, 172
+{}
+sprite BX2K, 172, 172
+{}
+sprite BX2L, 172, 172
+{}
+sprite BX2M, 172, 172
+{}
+sprite BX2N, 172, 172
+{}
+sprite BX2O, 172, 172
+{}
+sprite BX2P, 172, 172
+{}
+sprite BX2Q, 172, 172
+{}
+sprite BX2R, 172, 172
+{}
+sprite BX2S, 172, 172
+{}
+sprite BX2T, 172, 172
+{}
+sprite BX2U, 172, 172
+{}
+sprite BX2V, 172, 172
+{}
+sprite BX30, 172, 172
+{}
+sprite BX31, 172, 172
+{}
+sprite BX32, 172, 172
+{}
+sprite BX33, 172, 172
+{}
+sprite BX34, 172, 172
+{}
+sprite BX35, 172, 172
+{}
+sprite BX36, 172, 172
+{}
+sprite BX37, 172, 172
+{}
+sprite BX38, 172, 172
+{}
+sprite BX39, 172, 172
+{}
+sprite BX3A, 172, 172
+{}
+sprite BX3B, 172, 172
+{}
+sprite BX3C, 172, 172
+{}
+sprite BX3D, 172, 172
+{}
+sprite BX3E, 172, 172
+{}
+sprite BX3F, 172, 172
+{}
+sprite BX3G, 172, 172
+{}
+sprite BX3H, 172, 172
+{}
+sprite BX3I, 172, 172
+{}
+sprite BX3J, 172, 172
+{}
+sprite BX3K, 172, 172
+{}
+sprite BX3L, 172, 172
+{}
+sprite BX3M, 172, 172
+{}
+sprite BX3N, 172, 172
+{}
+sprite BX3O, 172, 172
+{}
+sprite BX3P, 172, 172
+{}
+sprite BX3Q, 172, 172
+{}
+sprite BX3R, 172, 172
+{}
+sprite BX3S, 172, 172
+{}
+sprite BX3T, 172, 172
+{}
+sprite BX3U, 172, 172
+{}
+sprite BX3V, 172, 172
+{}
+sprite BX40, 172, 172
+{}
+sprite BX41, 172, 172
+{}
+sprite BX42, 172, 172
+{}
+sprite BX43, 172, 172
+{}
+sprite BX44, 172, 172
+{}
+sprite BX45, 172, 172
+{}
+sprite BX46, 172, 172
+{}
+sprite BX47, 172, 172
+{}
+sprite BX48, 172, 172
+{}
+sprite BX49, 172, 172
+{}
+sprite BX4A, 172, 172
+{}
+sprite BX4B, 172, 172
+{}
+sprite BX4C, 172, 172
+{}
+sprite BX4D, 172, 172
+{}
+sprite BX4E, 172, 172
+{}
+sprite BX4F, 172, 172
+{}
+sprite BX4G, 172, 172
+{}
+sprite BX4H, 172, 172
+{}
+sprite BX4I, 172, 172
+{}
+sprite BX4J, 172, 172
+{}
+sprite BX4K, 172, 172
+{}
+sprite BX4L, 172, 172
+{}
+sprite BX4M, 172, 172
+{}
+sprite BX4N, 172, 172
+{}
+sprite BX4O, 172, 172
+{}
+sprite BX4P, 172, 172
+{}
+sprite BX4Q, 172, 172
+{}
+sprite BX4R, 172, 172
+{}
+sprite BX4S, 172, 172
+{}
+sprite BX4T, 172, 172
+{}
+sprite BX4U, 172, 172
+{}
+sprite BX4V, 172, 172
+{}
+sprite BX50, 172, 172
+{}
+sprite BX51, 172, 172
+{}
+sprite BX52, 172, 172
+{}
+sprite BX53, 172, 172
+{}
+sprite BX54, 172, 172
+{}
+sprite BX55, 172, 172
+{}
+sprite BX56, 172, 172
+{}
+sprite BX57, 172, 172
+{}
+sprite BX58, 172, 172
+{}
+sprite BX59, 172, 172
+{}
+sprite BX5A, 172, 172
+{}
+sprite BX5B, 172, 172
+{}
+sprite BX5C, 172, 172
+{}
+sprite BX5D, 172, 172
+{}
+sprite BX5E, 172, 172
+{}
+sprite BX5F, 172, 172
+{}
+sprite BX5G, 172, 172
+{}
+sprite BX5H, 172, 172
+{}
+sprite BX5I, 172, 172
+{}
+sprite BX5J, 172, 172
+{}
+sprite BX5K, 172, 172
+{}
+sprite BX5L, 172, 172
+{}
+sprite BX5M, 172, 172
+{}
+sprite BX5N, 172, 172
+{}
+sprite BX5O, 172, 172
+{}
+sprite BX5P, 172, 172
+{}
+sprite BX5Q, 172, 172
+{}
+sprite BX5R, 172, 172
+{}
+sprite BX5S, 172, 172
+{}
+sprite BX5T, 172, 172
+{}
+sprite BX5U, 172, 172
+{}
+sprite BX5V, 172, 172
+{}
+sprite BX60, 172, 172
+{}
+sprite BX61, 172, 172
+{}
+sprite BX62, 172, 172
+{}
+sprite BX63, 172, 172
+{}
+sprite BX64, 172, 172
+{}
+sprite BX65, 172, 172
+{}
+sprite BX66, 172, 172
+{}
+sprite BX67, 172, 172
+{}
+sprite BX68, 172, 172
+{}
+sprite BX69, 172, 172
+{}
+sprite BX6A, 172, 172
+{}
+sprite BX6B, 172, 172
+{}
+sprite BX6C, 172, 172
+{}
+sprite BX6D, 172, 172
+{}
+sprite BX6E, 172, 172
+{}
+sprite BX6F, 172, 172
+{}
+sprite BX6G, 172, 172
+{}
+sprite BX6H, 172, 172
+{}
+sprite BX6I, 172, 172
+{}
+sprite BX6J, 172, 172
+{}
+sprite BX6K, 172, 172
+{}
+sprite BX6L, 172, 172
+{}
+sprite BX6M, 172, 172
+{}
+sprite BX6N, 172, 172
+{}
+sprite BX6O, 172, 172
+{}
+sprite BX6P, 172, 172
+{}
+sprite BX6Q, 172, 172
+{}
+sprite BX6R, 172, 172
+{}
+sprite BX6S, 172, 172
+{}
+sprite BX6T, 172, 172
+{}
+sprite BX6U, 172, 172
+{}
+sprite BX6V, 172, 172
+{}
+sprite BX70, 172, 172
+{}
+sprite BX71, 172, 172
+{}
+sprite BX72, 172, 172
+{}
+sprite BX73, 172, 172
+{}
+sprite BX74, 172, 172
+{}
+sprite BX75, 172, 172
+{}
+sprite BX76, 172, 172
+{}
+sprite BX77, 172, 172
+{}
+sprite BX78, 172, 172
+{}
+sprite BX79, 172, 172
+{}
+sprite BX7A, 172, 172
+{}
+sprite BX7B, 172, 172
+{}
+sprite BX7C, 172, 172
+{}
+sprite BX7D, 172, 172
+{}
+sprite BX7E, 172, 172
+{}
+sprite BX7F, 172, 172
+{}
+sprite BX7G, 172, 172
+{}
+sprite BX7H, 172, 172
+{}
+sprite BX7I, 172, 172
+{}
+sprite BX7J, 172, 172
+{}
+sprite BX7K, 172, 172
+{}
+sprite BX7L, 172, 172
+{}
+sprite BX7M, 172, 172
+{}
+sprite BX7N, 172, 172
+{}
+sprite BX7O, 172, 172
+{}
+sprite BX7P, 172, 172
+{}
+sprite BX7Q, 172, 172
+{}
+sprite BX7R, 172, 172
+{}
+sprite BX7S, 172, 172
+{}
+sprite BX7T, 172, 172
+{}
+sprite BX7U, 172, 172
+{}
+sprite BX7V, 172, 172
+{}
+sprite BX80, 172, 172
+{}
+sprite BX81, 172, 172
+{}
+sprite BX82, 172, 172
+{}
+sprite BX83, 172, 172
+{}
+sprite BX84, 172, 172
+{}
+sprite BX85, 172, 172
+{}
+sprite BX86, 172, 172
+{}
+sprite BX87, 172, 172
+{}
+sprite BX88, 172, 172
+{}
+sprite BX89, 172, 172
+{}
+sprite BX8A, 172, 172
+{}
+sprite BX8B, 172, 172
+{}
+sprite BX8C, 172, 172
+{}
+sprite BX8D, 172, 172
+{}
+sprite BX8E, 172, 172
+{}
+sprite BX8F, 172, 172
+{}
+sprite BX8G, 172, 172
+{}
+sprite BX8H, 172, 172
+{}
+sprite BX8I, 172, 172
+{}
+sprite BX8J, 172, 172
+{}
+sprite BX8K, 172, 172
+{}
+sprite BX8L, 172, 172
+{}
+sprite BX8M, 172, 172
+{}
+sprite BX8N, 172, 172
+{}
+sprite BX8O, 172, 172
+{}
+sprite BX8P, 172, 172
+{}
+sprite BX8Q, 172, 172
+{}
+sprite BX8R, 172, 172
+{}
+sprite BX8S, 172, 172
+{}
+sprite BX8T, 172, 172
+{}
+sprite BX8U, 172, 172
+{}
+sprite BX8V, 172, 172
+{}
+sprite BX90, 172, 172
+{}
+sprite BX91, 172, 172
+{}
+sprite BX92, 172, 172
+{}
+sprite BX93, 172, 172
+{}
+sprite BX94, 172, 172
+{}
+sprite BX95, 172, 172
+{}
+sprite BX96, 172, 172
+{}
+sprite BX97, 172, 172
+{}
+sprite BX98, 172, 172
+{}
+sprite BX99, 172, 172
+{}
+sprite BX9A, 172, 172
+{}
+sprite BX9B, 172, 172
+{}
+sprite BX9C, 172, 172
+{}
+sprite BX9D, 172, 172
+{}
+sprite BX9E, 172, 172
+{}
+sprite BX9F, 172, 172
+{}
+sprite BX9G, 172, 172
+{}
+sprite BX9H, 172, 172
+{}
+sprite BX9I, 172, 172
+{}
+sprite BX9J, 172, 172
+{}
+sprite BX9K, 172, 172
+{}
+sprite BX9L, 172, 172
+{}
+sprite BX9M, 172, 172
+{}
+sprite BX9N, 172, 172
+{}
+sprite BX9O, 172, 172
+{}
+sprite BX9P, 172, 172
+{}
+sprite BX9Q, 172, 172
+{}
+sprite BX9R, 172, 172
+{}
+sprite BX9S, 172, 172
+{}
+sprite BX9T, 172, 172
+{}
+sprite BX9U, 172, 172
+{}
+sprite BX9V, 172, 172
+{}
+sprite BXA0, 172, 172
+{}
+sprite BXA1, 172, 172
+{}
+sprite BXA2, 172, 172
+{}
+sprite BXA3, 172, 172
+{}
+sprite BXA4, 172, 172
+{}
+sprite BXA5, 172, 172
+{}
+sprite BXA6, 172, 172
+{}
+sprite BXA7, 172, 172
+{}
+sprite BXA8, 172, 172
+{}
+sprite BXA9, 172, 172
+{}
+sprite BXAA, 172, 172
+{}
+sprite BXAB, 172, 172
+{}
+sprite BXAC, 172, 172
+{}
+sprite BXAD, 172, 172
+{}
+sprite BXAE, 172, 172
+{}
+sprite BXAF, 172, 172
+{}
+sprite BXAG, 172, 172
+{}
+sprite BXAH, 172, 172
+{}
+sprite BXAI, 172, 172
+{}
+sprite BXAJ, 172, 172
+{}
+sprite BXAK, 172, 172
+{}
+sprite BXAL, 172, 172
+{}
+sprite BXAM, 172, 172
+{}
+sprite BXAN, 172, 172
+{}
+sprite BXAO, 172, 172
+{}
+sprite BXAP, 172, 172
+{}
+sprite BXAQ, 172, 172
+{}
+sprite BXAR, 172, 172
+{}
+sprite BXAS, 172, 172
+{}
+sprite BXAT, 172, 172
+{}
+sprite BXAU, 172, 172
+{}
+sprite BXAV, 172, 172
+{}
+sprite BXB0, 172, 172
+{}
+sprite BXB1, 172, 172
+{}
+sprite BXB2, 172, 172
+{}
+sprite BXB3, 172, 172
+{}
+sprite BXB4, 172, 172
+{}
+sprite BXB5, 172, 172
+{}
+sprite BXB6, 172, 172
+{}
+sprite BXB7, 172, 172
+{}
+sprite BXB8, 172, 172
+{}
+sprite BXB9, 172, 172
+{}
+sprite BXBA, 172, 172
+{}
+sprite BXBB, 172, 172
+{}
+sprite BXBC, 172, 172
+{}
+sprite BXBD, 172, 172
+{}
+sprite BXBE, 172, 172
+{}
+sprite BXBF, 172, 172
+{}
+sprite BXBG, 172, 172
+{}
+sprite BXBH, 172, 172
+{}
+sprite BXBI, 172, 172
+{}
+sprite BXBJ, 172, 172
+{}
+sprite BXBK, 172, 172
+{}
+sprite BXBL, 172, 172
+{}
+sprite BXBM, 172, 172
+{}
+sprite BXBN, 172, 172
+{}
+sprite BXBO, 172, 172
+{}
+sprite BXBP, 172, 172
+{}
+sprite BXBQ, 172, 172
+{}
+sprite BXBR, 172, 172
+{}
+sprite BXBS, 172, 172
+{}
+sprite BXBT, 172, 172
+{}
+sprite BXBU, 172, 172
+{}
+sprite BXBV, 172, 172
+{}
+sprite BXC0, 172, 172
+{}
+sprite BXC1, 172, 172
+{}
+sprite BXC2, 172, 172
+{}
+sprite BXC3, 172, 172
+{}
+sprite BXC4, 172, 172
+{}
+sprite BXC5, 172, 172
+{}
+sprite BXC6, 172, 172
+{}
+sprite BXC7, 172, 172
+{}
+sprite BXC8, 172, 172
+{}
+sprite BXC9, 172, 172
+{}
+sprite BXCA, 172, 172
+{}
+sprite BXCB, 172, 172
+{}
+sprite BXCC, 172, 172
+{}
+sprite BXCD, 172, 172
+{}
+sprite BXCE, 172, 172
+{}
+sprite BXCF, 172, 172
+{}
+sprite BXCG, 172, 172
+{}
+sprite BXCH, 172, 172
+{}
+sprite BXCI, 172, 172
+{}
+sprite BXCJ, 172, 172
+{}
+sprite BXCK, 172, 172
+{}
+sprite BXCL, 172, 172
+{}
+sprite BXCM, 172, 172
+{}
+sprite BXCN, 172, 172
+{}
+sprite BXCO, 172, 172
+{}
+sprite BXCP, 172, 172
+{}
+sprite BXCQ, 172, 172
+{}
+sprite BXCR, 172, 172
+{}
+sprite BXCS, 172, 172
+{}
+sprite BXCT, 172, 172
+{}
+sprite BXCU, 172, 172
+{}
+sprite BXCV, 172, 172
+{}
+sprite BXD0, 172, 172
+{}
+sprite BXD1, 172, 172
+{}
+sprite BXD2, 172, 172
+{}
+sprite BXD3, 172, 172
+{}
+sprite BXD4, 172, 172
+{}
+sprite BXD5, 172, 172
+{}
+sprite BXD6, 172, 172
+{}
+sprite BXD7, 172, 172
+{}
+sprite BXD8, 172, 172
+{}
+sprite BXD9, 172, 172
+{}
+sprite BXDA, 172, 172
+{}
+sprite BXDB, 172, 172
+{}
+sprite BXDC, 172, 172
+{}
+sprite BXDD, 172, 172
+{}
+sprite BXDE, 172, 172
+{}
+sprite BXDF, 172, 172
+{}
+sprite BXDG, 172, 172
+{}
+sprite BXDH, 172, 172
+{}
+sprite BXDI, 172, 172
+{}
+sprite BXDJ, 172, 172
+{}
+sprite BXDK, 172, 172
+{}
+sprite BXDL, 172, 172
+{}
+sprite BXDM, 172, 172
+{}
+sprite BXDN, 172, 172
+{}
+sprite BXDO, 172, 172
+{}
+sprite BXDP, 172, 172
+{}
+sprite BXDQ, 172, 172
+{}
+sprite BXDR, 172, 172
+{}
+sprite BXDS, 172, 172
+{}
+sprite BXDT, 172, 172
+{}
+sprite BXDU, 172, 172
+{}
+sprite BXDV, 172, 172
+{}
+sprite BXE0, 172, 172
+{}
+sprite BXE1, 172, 172
+{}
+sprite BXE2, 172, 172
+{}
+sprite BXE3, 172, 172
+{}
+sprite BXE4, 172, 172
+{}
+sprite BXE5, 172, 172
+{}
+sprite BXE6, 172, 172
+{}
+sprite BXE7, 172, 172
+{}
+sprite BXE8, 172, 172
+{}
+sprite BXE9, 172, 172
+{}
+sprite BXEA, 172, 172
+{}
+sprite BXEB, 172, 172
+{}
+sprite BXEC, 172, 172
+{}
+sprite BXED, 172, 172
+{}
+sprite BXEE, 172, 172
+{}
+sprite BXEF, 172, 172
+{}
+sprite BXEG, 172, 172
+{}
+sprite BXEH, 172, 172
+{}
+sprite BXEI, 172, 172
+{}
+sprite BXEJ, 172, 172
+{}
+sprite BXEK, 172, 172
+{}
+sprite BXEL, 172, 172
+{}
+sprite BXEM, 172, 172
+{}
+sprite BXEN, 172, 172
+{}
+sprite BXEO, 172, 172
+{}
+sprite BXEP, 172, 172
+{}
+sprite BXEQ, 172, 172
+{}
+sprite BXER, 172, 172
+{}
+sprite BXES, 172, 172
+{}
+sprite BXET, 172, 172
+{}
+sprite BXEU, 172, 172
+{}
+sprite BXEV, 172, 172
+{}
+sprite BXF0, 172, 172
+{}
+sprite BXF1, 172, 172
+{}
+sprite BXF2, 172, 172
+{}
+sprite BXF3, 172, 172
+{}
+sprite BXF4, 172, 172
+{}
+sprite BXF5, 172, 172
+{}
+sprite BXF6, 172, 172
+{}
+sprite BXF7, 172, 172
+{}
+sprite BXF8, 172, 172
+{}
+sprite BXF9, 172, 172
+{}
+sprite BXFA, 172, 172
+{}
+sprite BXFB, 172, 172
+{}
+sprite BXFC, 172, 172
+{}
+sprite BXFD, 172, 172
+{}
+sprite BXFE, 172, 172
+{}
+sprite BXFF, 172, 172
+{}
+sprite BXFG, 172, 172
+{}
+sprite BXFH, 172, 172
+{}
+sprite BXFI, 172, 172
+{}
+sprite BXFJ, 172, 172
+{}
+sprite BXFK, 172, 172
+{}
+sprite BXFL, 172, 172
+{}
+sprite BXFM, 172, 172
+{}
+sprite BXFN, 172, 172
+{}
+sprite BXFO, 172, 172
+{}
+sprite BXFP, 172, 172
+{}
+sprite BXFQ, 172, 172
+{}
+sprite BXFR, 172, 172
+{}
+sprite BXFS, 172, 172
+{}
+sprite BXFT, 172, 172
+{}
+sprite BXFU, 172, 172
+{}
+sprite BXFV, 172, 172
+{}
+sprite BXG0, 172, 172
+{}
+sprite BXG1, 172, 172
+{}
+sprite BXG2, 172, 172
+{}
+sprite BXG3, 172, 172
+{}
+sprite BXG4, 172, 172
+{}
+sprite BXG5, 172, 172
+{}
+sprite BXG6, 172, 172
+{}
+sprite BXG7, 172, 172
+{}
+sprite BXG8, 172, 172
+{}
+sprite BXG9, 172, 172
+{}
+sprite BXGA, 172, 172
+{}
+sprite BXGB, 172, 172
+{}
+sprite BXGC, 172, 172
+{}
+sprite BXGD, 172, 172
+{}
+sprite BXGE, 172, 172
+{}
+sprite BXGF, 172, 172
+{}
+sprite BXGG, 172, 172
+{}
+sprite BXGH, 172, 172
+{}
+sprite BXGI, 172, 172
+{}
+sprite BXGJ, 172, 172
+{}
+sprite BXGK, 172, 172
+{}
+sprite BXGL, 172, 172
+{}
+sprite BXGM, 172, 172
+{}
+sprite BXGN, 172, 172
+{}
+sprite BXGO, 172, 172
+{}
+sprite BXGP, 172, 172
+{}
+sprite BXGQ, 172, 172
+{}
+sprite BXGR, 172, 172
+{}
+sprite BXGS, 172, 172
+{}
+sprite BXGT, 172, 172
+{}
+sprite BXGU, 172, 172
+{}
+sprite BXGV, 172, 172
+{}
+sprite BXH0, 172, 172
+{}
+sprite BXH1, 172, 172
+{}
+sprite BXH2, 172, 172
+{}
+sprite BXH3, 172, 172
+{}
+sprite BXH4, 172, 172
+{}
+sprite BXH5, 172, 172
+{}
+sprite BXH6, 172, 172
+{}
+sprite BXH7, 172, 172
+{}
+sprite BXH8, 172, 172
+{}
+sprite BXH9, 172, 172
+{}
+sprite BXHA, 172, 172
+{}
+sprite BXHB, 172, 172
+{}
+sprite BXHC, 172, 172
+{}
+sprite BXHD, 172, 172
+{}
+sprite BXHE, 172, 172
+{}
+sprite BXHF, 172, 172
+{}
+sprite BXHG, 172, 172
+{}
+sprite BXHH, 172, 172
+{}
+sprite BXHI, 172, 172
+{}
+sprite BXHJ, 172, 172
+{}
+sprite BXHK, 172, 172
+{}
+sprite BXHL, 172, 172
+{}
+sprite BXHM, 172, 172
+{}
+sprite BXHN, 172, 172
+{}
+sprite BXHO, 172, 172
+{}
+sprite BXHP, 172, 172
+{}
+sprite BXHQ, 172, 172
+{}
+sprite BXHR, 172, 172
+{}
+sprite BXHS, 172, 172
+{}
+sprite BXHT, 172, 172
+{}
+sprite BXHU, 172, 172
+{}
+sprite BXHV, 172, 172
+{}
+sprite BXI0, 172, 172
+{}
+sprite BXI1, 172, 172
+{}
+sprite BXI2, 172, 172
+{}
+sprite BXI3, 172, 172
+{}
+sprite BXI4, 172, 172
+{}
+sprite BXI5, 172, 172
+{}
+sprite BXI6, 172, 172
+{}
+sprite BXI7, 172, 172
+{}
+sprite BXI8, 172, 172
+{}
+sprite BXI9, 172, 172
+{}
+sprite BXIA, 172, 172
+{}
+sprite BXIB, 172, 172
+{}
+sprite BXIC, 172, 172
+{}
+sprite BXID, 172, 172
+{}
+sprite BXIE, 172, 172
+{}
+sprite BXIF, 172, 172
+{}
+sprite BXIG, 172, 172
+{}
+sprite BXIH, 172, 172
+{}
+sprite BXII, 172, 172
+{}
+sprite BXIJ, 172, 172
+{}
+sprite BXIK, 172, 172
+{}
+sprite BXIL, 172, 172
+{}
+sprite BXIM, 172, 172
+{}
+sprite BXIN, 172, 172
+{}
+sprite BXIO, 172, 172
+{}
+sprite BXIP, 172, 172
+{}
+sprite BXIQ, 172, 172
+{}
+sprite BXIR, 172, 172
+{}
+sprite BXIS, 172, 172
+{}
+sprite BXIT, 172, 172
+{}
+sprite BXIU, 172, 172
+{}
+sprite BXIV, 172, 172
+{}
+sprite BXJ0, 172, 172
+{}
+sprite BXJ1, 172, 172
+{}
+sprite BXJ2, 172, 172
+{}
+sprite BXJ3, 172, 172
+{}
+sprite BXJ4, 172, 172
+{}
+sprite BXJ5, 172, 172
+{}
+sprite BXJ6, 172, 172
+{}
+sprite BXJ7, 172, 172
+{}
+sprite BXJ8, 172, 172
+{}
+sprite BXJ9, 172, 172
+{}
+sprite BXJA, 172, 172
+{}
+sprite BXJB, 172, 172
+{}
+sprite BXJC, 172, 172
+{}
+sprite BXJD, 172, 172
+{}
+sprite BXJE, 172, 172
+{}
+sprite BXJF, 172, 172
+{}
+sprite BXJG, 172, 172
+{}
+sprite BXJH, 172, 172
+{}
+sprite BXJI, 172, 172
+{}
+sprite BXJJ, 172, 172
+{}
+sprite BXJK, 172, 172
+{}
+sprite BXJL, 172, 172
+{}
+sprite BXJM, 172, 172
+{}
+sprite BXJN, 172, 172
+{}
+sprite BXJO, 172, 172
+{}
+sprite BXJP, 172, 172
+{}
+sprite BXJQ, 172, 172
+{}
+sprite BXJR, 172, 172
+{}
+sprite BXJS, 172, 172
+{}
+sprite BXJT, 172, 172
+{}
+sprite BXJU, 172, 172
+{}
+sprite BXJV, 172, 172
+{}
+sprite BXK0, 172, 172
+{}
+sprite BXK1, 172, 172
+{}
+sprite BXK2, 172, 172
+{}
+sprite BXK3, 172, 172
+{}
+sprite BXK4, 172, 172
+{}
+sprite BXK5, 172, 172
+{}
+sprite BXK6, 172, 172
+{}
+sprite BXK7, 172, 172
+{}
+sprite BXK8, 172, 172
+{}
+sprite BXK9, 172, 172
+{}
+sprite BXKA, 172, 172
+{}
+sprite BXKB, 172, 172
+{}
+sprite BXKC, 172, 172
+{}
+sprite BXKD, 172, 172
+{}
+sprite BXKE, 172, 172
+{}
+sprite BXKF, 172, 172
+{}
+sprite BXKG, 172, 172
+{}
+sprite BXKH, 172, 172
+{}
+sprite BXKI, 172, 172
+{}
+sprite BXKJ, 172, 172
+{}
+sprite BXKK, 172, 172
+{}
+sprite BXKL, 172, 172
+{}
+sprite BXKM, 172, 172
+{}
+sprite BXKN, 172, 172
+{}
+sprite BXKO, 172, 172
+{}
+sprite BXKP, 172, 172
+{}
+sprite BXKQ, 172, 172
+{}
+sprite BXKR, 172, 172
+{}
+sprite BXKS, 172, 172
+{}
+sprite BXKT, 172, 172
+{}
+sprite BXKU, 172, 172
+{}
+sprite BXKV, 172, 172
+{}
+sprite BXL0, 172, 172
+{}
+sprite BXL1, 172, 172
+{}
+sprite BXL2, 172, 172
+{}
+sprite BXL3, 172, 172
+{}
+sprite BXL4, 172, 172
+{}
+sprite BXL5, 172, 172
+{}
+sprite BXL6, 172, 172
+{}
+sprite BXL7, 172, 172
+{}
+sprite BXL8, 172, 172
+{}
+sprite BXL9, 172, 172
+{}
+sprite BXLA, 172, 172
+{}
+sprite BXLB, 172, 172
+{}
+sprite BXLC, 172, 172
+{}
+sprite BXLD, 172, 172
+{}
+sprite BXLE, 172, 172
+{}
+sprite BXLF, 172, 172
+{}
+sprite BXLG, 172, 172
+{}
+sprite BXLH, 172, 172
+{}
+sprite BXLI, 172, 172
+{}
+sprite BXLJ, 172, 172
+{}
+sprite BXLK, 172, 172
+{}
+sprite BXLL, 172, 172
+{}
+sprite BXLM, 172, 172
+{}
+sprite BXLN, 172, 172
+{}
+sprite BXLO, 172, 172
+{}
+sprite BXLP, 172, 172
+{}
+sprite BXLQ, 172, 172
+{}
+sprite BXLR, 172, 172
+{}
+sprite BXLS, 172, 172
+{}
+sprite BXLT, 172, 172
+{}
+sprite BXLU, 172, 172
+{}
+sprite BXLV, 172, 172
+{}
+sprite BXM0, 172, 172
+{}
+sprite BXM1, 172, 172
+{}
+sprite BXM2, 172, 172
+{}
+sprite BXM3, 172, 172
+{}
+sprite BXM4, 172, 172
+{}
+sprite BXM5, 172, 172
+{}
+sprite BXM6, 172, 172
+{}
+sprite BXM7, 172, 172
+{}
+sprite BXM8, 172, 172
+{}
+sprite BXM9, 172, 172
+{}
+sprite BXMA, 172, 172
+{}
+sprite BXMB, 172, 172
+{}
+sprite BXMC, 172, 172
+{}
+sprite BXMD, 172, 172
+{}
+sprite BXME, 172, 172
+{}
+sprite BXMF, 172, 172
+{}
+sprite BXMG, 172, 172
+{}
+sprite BXMH, 172, 172
+{}
+sprite BXMI, 172, 172
+{}
+sprite BXMJ, 172, 172
+{}
+sprite BXMK, 172, 172
+{}
+sprite BXML, 172, 172
+{}
+sprite BXMM, 172, 172
+{}
+sprite BXMN, 172, 172
+{}
+sprite BXMO, 172, 172
+{}
+sprite BXMP, 172, 172
+{}
+sprite BXMQ, 172, 172
+{}
+sprite BXMR, 172, 172
+{}
+sprite BXMS, 172, 172
+{}
+sprite BXMT, 172, 172
+{}
+sprite BXMU, 172, 172
+{}
+sprite BXMV, 172, 172
+{}
+sprite BXN0, 172, 172
+{}
+sprite BXN1, 172, 172
+{}
+sprite BXN2, 172, 172
+{}
+sprite BXN3, 172, 172
+{}
+sprite BXN4, 172, 172
+{}
+sprite BXN5, 172, 172
+{}
+sprite BXN6, 172, 172
+{}
+sprite BXN7, 172, 172
+{}
+sprite BXN8, 172, 172
+{}
+sprite BXN9, 172, 172
+{}
+sprite BXNA, 172, 172
+{}
+sprite BXNB, 172, 172
+{}
+sprite BXNC, 172, 172
+{}
+sprite BXND, 172, 172
+{}
+sprite BXNE, 172, 172
+{}
+sprite BXNF, 172, 172
+{}
+sprite BXNG, 172, 172
+{}
+sprite BXNH, 172, 172
+{}
+sprite BXNI, 172, 172
+{}
+sprite BXNJ, 172, 172
+{}
+sprite BXNK, 172, 172
+{}
+sprite BXNL, 172, 172
+{}
+sprite BXNM, 172, 172
+{}
+sprite BXNN, 172, 172
+{}
+sprite BXNO, 172, 172
+{}
+sprite BXNP, 172, 172
+{}
+sprite BXNQ, 172, 172
+{}
+sprite BXNR, 172, 172
+{}
+sprite BXNS, 172, 172
+{}
+sprite BXNT, 172, 172
+{}
+sprite BXNU, 172, 172
+{}
+sprite BXNV, 172, 172
+{}
+sprite BXO0, 172, 172
+{}
+sprite BXO1, 172, 172
+{}
+sprite BXO2, 172, 172
+{}
+sprite BXO3, 172, 172
+{}
+sprite BXO4, 172, 172
+{}
+sprite BXO5, 172, 172
+{}
+sprite BXO6, 172, 172
+{}
+sprite BXO7, 172, 172
+{}
+sprite BXO8, 172, 172
+{}
+sprite BXO9, 172, 172
+{}
+sprite BXOA, 172, 172
+{}
+sprite BXOB, 172, 172
+{}
+sprite BXOC, 172, 172
+{}
+sprite BXOD, 172, 172
+{}
+sprite BXOE, 172, 172
+{}
+sprite BXOF, 172, 172
+{}
+sprite BXOG, 172, 172
+{}
+sprite BXOH, 172, 172
+{}
+sprite BXOI, 172, 172
+{}
+sprite BXOJ, 172, 172
+{}
+sprite BXOK, 172, 172
+{}
+sprite BXOL, 172, 172
+{}
+sprite BXOM, 172, 172
+{}
+sprite BXON, 172, 172
+{}
+sprite BXOO, 172, 172
+{}
+sprite BXOP, 172, 172
+{}
+sprite BXOQ, 172, 172
+{}
+sprite BXOR, 172, 172
+{}
+sprite BXOS, 172, 172
+{}
+sprite BXOT, 172, 172
+{}
+sprite BXOU, 172, 172
+{}
+sprite BXOV, 172, 172
+{}
+sprite BXP0, 172, 172
+{}
+sprite BXP1, 172, 172
+{}
+sprite BXP2, 172, 172
+{}
+sprite BXP3, 172, 172
+{}
+sprite BXP4, 172, 172
+{}
+sprite BXP5, 172, 172
+{}
+sprite BXP6, 172, 172
+{}
+sprite BXP7, 172, 172
+{}
+sprite BXP8, 172, 172
+{}
+sprite BXP9, 172, 172
+{}
+sprite BXPA, 172, 172
+{}
+sprite BXPB, 172, 172
+{}
+sprite BXPC, 172, 172
+{}
+sprite BXPD, 172, 172
+{}
+sprite BXPE, 172, 172
+{}
+sprite BXPF, 172, 172
+{}
+sprite BXPG, 172, 172
+{}
+sprite BXPH, 172, 172
+{}
+sprite BXPI, 172, 172
+{}
+sprite BXPJ, 172, 172
+{}
+sprite BXPK, 172, 172
+{}
+sprite BXPL, 172, 172
+{}
+sprite BXPM, 172, 172
+{}
+sprite BXPN, 172, 172
+{}
+sprite BXPO, 172, 172
+{}
+sprite BXPP, 172, 172
+{}
+sprite BXPQ, 172, 172
+{}
+sprite BXPR, 172, 172
+{}
+sprite BXPS, 172, 172
+{}
+sprite BXPT, 172, 172
+{}
+sprite BXPU, 172, 172
+{}
+sprite BXPV, 172, 172
+{}
+sprite BXQ0, 172, 172
+{}
+sprite BXQ1, 172, 172
+{}
+sprite BXQ2, 172, 172
+{}
+sprite BXQ3, 172, 172
+{}
+sprite BXQ4, 172, 172
+{}
+sprite BXQ5, 172, 172
+{}
+sprite BXQ6, 172, 172
+{}
+sprite BXQ7, 172, 172
+{}
+sprite BXQ8, 172, 172
+{}
+sprite BXQ9, 172, 172
+{}
+sprite BXQA, 172, 172
+{}
+sprite BXQB, 172, 172
+{}
+sprite BXQC, 172, 172
+{}
+sprite BXQD, 172, 172
+{}
+sprite BXQE, 172, 172
+{}
+sprite BXQF, 172, 172
+{}
+sprite BXQG, 172, 172
+{}
+sprite BXQH, 172, 172
+{}
+sprite BXQI, 172, 172
+{}
+sprite BXQJ, 172, 172
+{}
+sprite BXQK, 172, 172
+{}
+sprite BXQL, 172, 172
+{}
+sprite BXQM, 172, 172
+{}
+sprite BXQN, 172, 172
+{}
+sprite BXQO, 172, 172
+{}
+sprite BXQP, 172, 172
+{}
+sprite BXQQ, 172, 172
+{}
+sprite BXQR, 172, 172
+{}
+sprite BXQS, 172, 172
+{}
+sprite BXQT, 172, 172
+{}
+sprite BXQU, 172, 172
+{}
+sprite BXQV, 172, 172
+{}
+sprite BXR0, 172, 172
+{}
+sprite BXR1, 172, 172
+{}
+sprite BXR2, 172, 172
+{}
+sprite BXR3, 172, 172
+{}
+sprite BXR4, 172, 172
+{}
+sprite BXR5, 172, 172
+{}
+sprite BXR6, 172, 172
+{}
+sprite BXR7, 172, 172
+{}
+sprite BXR8, 172, 172
+{}
+sprite BXR9, 172, 172
+{}
+sprite BXRA, 172, 172
+{}
+sprite BXRB, 172, 172
+{}
+sprite BXRC, 172, 172
+{}
+sprite BXRD, 172, 172
+{}
+sprite BXRE, 172, 172
+{}
+sprite BXRF, 172, 172
+{}
+sprite BXRG, 172, 172
+{}
+sprite BXRH, 172, 172
+{}
+sprite BXRI, 172, 172
+{}
+sprite BXRJ, 172, 172
+{}
+sprite BXRK, 172, 172
+{}
+sprite BXRL, 172, 172
+{}
+sprite BXRM, 172, 172
+{}
+sprite BXRN, 172, 172
+{}
+sprite BXRO, 172, 172
+{}
+sprite BXRP, 172, 172
+{}
+sprite BXRQ, 172, 172
+{}
+sprite BXRR, 172, 172
+{}
+sprite BXRS, 172, 172
+{}
+sprite BXRT, 172, 172
+{}
+sprite BXRU, 172, 172
+{}
+sprite BXRV, 172, 172
+{}
+sprite BXS0, 172, 172
+{}
+sprite BXS1, 172, 172
+{}
+sprite BXS2, 172, 172
+{}
+sprite BXS3, 172, 172
+{}
+sprite BXS4, 172, 172
+{}
+sprite BXS5, 172, 172
+{}
+sprite BXS6, 172, 172
+{}
+sprite BXS7, 172, 172
+{}
+sprite BXS8, 172, 172
+{}
+sprite BXS9, 172, 172
+{}
+sprite BXSA, 172, 172
+{}
+sprite BXSB, 172, 172
+{}
+sprite BXSC, 172, 172
+{}
+sprite BXSD, 172, 172
+{}
+sprite BXSE, 172, 172
+{}
+sprite BXSF, 172, 172
+{}
+sprite BXSG, 172, 172
+{}
+sprite BXSH, 172, 172
+{}
+sprite BXSI, 172, 172
+{}
+sprite BXSJ, 172, 172
+{}
+sprite BXSK, 172, 172
+{}
+sprite BXSL, 172, 172
+{}
+sprite BXSM, 172, 172
+{}
+sprite BXSN, 172, 172
+{}
+sprite BXSO, 172, 172
+{}
+sprite BXSP, 172, 172
+{}
+sprite BXSQ, 172, 172
+{}
+sprite BXSR, 172, 172
+{}
+sprite BXSS, 172, 172
+{}
+sprite BXST, 172, 172
+{}
+sprite BXSU, 172, 172
+{}
+sprite BXSV, 172, 172
+{}
+sprite BXT0, 172, 172
+{}
+sprite BXT1, 172, 172
+{}
+sprite BXT2, 172, 172
+{}
+sprite BXT3, 172, 172
+{}
+sprite BXT4, 172, 172
+{}
+sprite BXT5, 172, 172
+{}
+sprite BXT6, 172, 172
+{}
+sprite BXT7, 172, 172
+{}
+sprite BXT8, 172, 172
+{}
+sprite BXT9, 172, 172
+{}
+sprite BXTA, 172, 172
+{}
+sprite BXTB, 172, 172
+{}
+sprite BXTC, 172, 172
+{}
+sprite BXTD, 172, 172
+{}
+sprite BXTE, 172, 172
+{}
+sprite BXTF, 172, 172
+{}
+sprite BXTG, 172, 172
+{}
+sprite BXTH, 172, 172
+{}
+sprite BXTI, 172, 172
+{}
+sprite BXTJ, 172, 172
+{}
+sprite BXTK, 172, 172
+{}
+sprite BXTL, 172, 172
+{}
+sprite BXTM, 172, 172
+{}
+sprite BXTN, 172, 172
+{}
+sprite BXTO, 172, 172
+{}
+sprite BXTP, 172, 172
+{}
+sprite BXTQ, 172, 172
+{}
+sprite BXTR, 172, 172
+{}
+sprite BXTS, 172, 172
+{}
+sprite BXTT, 172, 172
+{}
+sprite BXTU, 172, 172
+{}
+sprite BXTV, 172, 172
+{}
+sprite BXU0, 172, 172
+{}

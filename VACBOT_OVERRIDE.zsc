@@ -1,0 +1,3895 @@
+class VACBOT_ES_BadApple : actor replaces VACBOTEmotionSystem {
+	actor pairedLED;
+
+	void setEmotion(StateLabel emotionLabel, int overrideEmotion = 0) {
+		// intentionally left empty
+	}
+
+	override void tick() {
+		super.tick();
+		A_Warp(AAPTR_MASTER, 3, 0, 5.5, 0, WARPF_NOCHECKPOSITION|WARPF_INTERPOLATE);
+	}
+
+	default {
+		scale 0.4;
+		+NOINTERACTION;
+		+PRECACHEALWAYS;
+	}
+
+	States {
+			Spawn:
+				TNT1 A 0;
+				goto Frame_0000;
+			Frame_0000:
+				TNT1 A 5 {
+					if (checkProximity("Dawn", 110, 1, CPXF_CHECKSIGHT)) {
+						console.printf("Bad apple!!");
+						A_PlaySound("badapple", CHAN_AUTO, 0.7, 0, 2.1);
+						setStateLabel("Frame_0001");
+					}
+				}
+				loop;
+// GENERATED DATA BEGIN
+Precache:
+  BXX1 A 0;
+  BXX2 A 0;
+  BXX3 A 0;
+  BXX4 A 0;
+  BXX5 A 0;
+  BXX6 A 0;
+  BXX7 A 0;
+  BXX8 A 0;
+  BXX9 A 0;
+  BXXA A 0;
+  BXXB A 0;
+  BXXC A 0;
+  BXXD A 0;
+  BXXE A 0;
+  BXXF A 0;
+  BXXG A 0;
+  BXXH A 0;
+  BXXI A 0;
+  BXXJ A 0;
+  BXXK A 0;
+  BXXL A 0;
+  BXXM A 0;
+  BXXN A 0;
+  BXXO A 0;
+  BXXP A 0;
+  BXXQ A 0;
+  BXXR A 0;
+  BXXS A 0;
+  BXXT A 0;
+  BXXU A 0;
+  BXXV A 0;
+  BX10 A 0;
+  BX11 A 0;
+  BX12 A 0;
+  BX13 A 0;
+  BX14 A 0;
+  BX15 A 0;
+  BX16 A 0;
+  BX17 A 0;
+  BX18 A 0;
+  BX19 A 0;
+  BX1A A 0;
+  BX1B A 0;
+  BX1C A 0;
+  BX1D A 0;
+  BX1E A 0;
+  BX1F A 0;
+  BX1G A 0;
+  BX1H A 0;
+  BX1I A 0;
+  BX1J A 0;
+  BX1K A 0;
+  BX1L A 0;
+  BX1M A 0;
+  BX1N A 0;
+  BX1O A 0;
+  BX1P A 0;
+  BX1Q A 0;
+  BX1R A 0;
+  BX1S A 0;
+  BX1T A 0;
+  BX1U A 0;
+  BX1V A 0;
+  BX20 A 0;
+  BX21 A 0;
+  BX22 A 0;
+  BX23 A 0;
+  BX24 A 0;
+  BX25 A 0;
+  BX26 A 0;
+  BX27 A 0;
+  BX28 A 0;
+  BX29 A 0;
+  BX2A A 0;
+  BX2B A 0;
+  BX2C A 0;
+  BX2D A 0;
+  BX2E A 0;
+  BX2F A 0;
+  BX2G A 0;
+  BX2H A 0;
+  BX2I A 0;
+  BX2J A 0;
+  BX2K A 0;
+  BX2L A 0;
+  BX2M A 0;
+  BX2N A 0;
+  BX2O A 0;
+  BX2P A 0;
+  BX2Q A 0;
+  BX2R A 0;
+  BX2S A 0;
+  BX2T A 0;
+  BX2U A 0;
+  BX2V A 0;
+  BX30 A 0;
+  BX31 A 0;
+  BX32 A 0;
+  BX33 A 0;
+  BX34 A 0;
+  BX35 A 0;
+  BX36 A 0;
+  BX37 A 0;
+  BX38 A 0;
+  BX39 A 0;
+  BX3A A 0;
+  BX3B A 0;
+  BX3C A 0;
+  BX3D A 0;
+  BX3E A 0;
+  BX3F A 0;
+  BX3G A 0;
+  BX3H A 0;
+  BX3I A 0;
+  BX3J A 0;
+  BX3K A 0;
+  BX3L A 0;
+  BX3M A 0;
+  BX3N A 0;
+  BX3O A 0;
+  BX3P A 0;
+  BX3Q A 0;
+  BX3R A 0;
+  BX3S A 0;
+  BX3T A 0;
+  BX3U A 0;
+  BX3V A 0;
+  BX40 A 0;
+  BX41 A 0;
+  BX42 A 0;
+  BX43 A 0;
+  BX44 A 0;
+  BX45 A 0;
+  BX46 A 0;
+  BX47 A 0;
+  BX48 A 0;
+  BX49 A 0;
+  BX4A A 0;
+  BX4B A 0;
+  BX4C A 0;
+  BX4D A 0;
+  BX4E A 0;
+  BX4F A 0;
+  BX4G A 0;
+  BX4H A 0;
+  BX4I A 0;
+  BX4J A 0;
+  BX4K A 0;
+  BX4L A 0;
+  BX4M A 0;
+  BX4N A 0;
+  BX4O A 0;
+  BX4P A 0;
+  BX4Q A 0;
+  BX4R A 0;
+  BX4S A 0;
+  BX4T A 0;
+  BX4U A 0;
+  BX4V A 0;
+  BX50 A 0;
+  BX51 A 0;
+  BX52 A 0;
+  BX53 A 0;
+  BX54 A 0;
+  BX55 A 0;
+  BX56 A 0;
+  BX57 A 0;
+  BX58 A 0;
+  BX59 A 0;
+  BX5A A 0;
+  BX5B A 0;
+  BX5C A 0;
+  BX5D A 0;
+  BX5E A 0;
+  BX5F A 0;
+  BX5G A 0;
+  BX5H A 0;
+  BX5I A 0;
+  BX5J A 0;
+  BX5K A 0;
+  BX5L A 0;
+  BX5M A 0;
+  BX5N A 0;
+  BX5O A 0;
+  BX5P A 0;
+  BX5Q A 0;
+  BX5R A 0;
+  BX5S A 0;
+  BX5T A 0;
+  BX5U A 0;
+  BX5V A 0;
+  BX60 A 0;
+  BX61 A 0;
+  BX62 A 0;
+  BX63 A 0;
+  BX64 A 0;
+  BX65 A 0;
+  BX66 A 0;
+  BX67 A 0;
+  BX68 A 0;
+  BX69 A 0;
+  BX6A A 0;
+  BX6B A 0;
+  BX6C A 0;
+  BX6D A 0;
+  BX6E A 0;
+  BX6F A 0;
+  BX6G A 0;
+  BX6H A 0;
+  BX6I A 0;
+  BX6J A 0;
+  BX6K A 0;
+  BX6L A 0;
+  BX6M A 0;
+  BX6N A 0;
+  BX6O A 0;
+  BX6P A 0;
+  BX6Q A 0;
+  BX6R A 0;
+  BX6S A 0;
+  BX6T A 0;
+  BX6U A 0;
+  BX6V A 0;
+  BX70 A 0;
+  BX71 A 0;
+  BX72 A 0;
+  BX73 A 0;
+  BX74 A 0;
+  BX75 A 0;
+  BX76 A 0;
+  BX77 A 0;
+  BX78 A 0;
+  BX79 A 0;
+  BX7A A 0;
+  BX7B A 0;
+  BX7C A 0;
+  BX7D A 0;
+  BX7E A 0;
+  BX7F A 0;
+  BX7G A 0;
+  BX7H A 0;
+  BX7I A 0;
+  BX7J A 0;
+  BX7K A 0;
+  BX7L A 0;
+  BX7M A 0;
+  BX7N A 0;
+  BX7O A 0;
+  BX7P A 0;
+  BX7Q A 0;
+  BX7R A 0;
+  BX7S A 0;
+  BX7T A 0;
+  BX7U A 0;
+  BX7V A 0;
+  BX80 A 0;
+  BX81 A 0;
+  BX82 A 0;
+  BX83 A 0;
+  BX84 A 0;
+  BX85 A 0;
+  BX86 A 0;
+  BX87 A 0;
+  BX88 A 0;
+  BX89 A 0;
+  BX8A A 0;
+  BX8B A 0;
+  BX8C A 0;
+  BX8D A 0;
+  BX8E A 0;
+  BX8F A 0;
+  BX8G A 0;
+  BX8H A 0;
+  BX8I A 0;
+  BX8J A 0;
+  BX8K A 0;
+  BX8L A 0;
+  BX8M A 0;
+  BX8N A 0;
+  BX8O A 0;
+  BX8P A 0;
+  BX8Q A 0;
+  BX8R A 0;
+  BX8S A 0;
+  BX8T A 0;
+  BX8U A 0;
+  BX8V A 0;
+  BX90 A 0;
+  BX91 A 0;
+  BX92 A 0;
+  BX93 A 0;
+  BX94 A 0;
+  BX95 A 0;
+  BX96 A 0;
+  BX97 A 0;
+  BX98 A 0;
+  BX99 A 0;
+  BX9A A 0;
+  BX9B A 0;
+  BX9C A 0;
+  BX9D A 0;
+  BX9E A 0;
+  BX9F A 0;
+  BX9G A 0;
+  BX9H A 0;
+  BX9I A 0;
+  BX9J A 0;
+  BX9K A 0;
+  BX9L A 0;
+  BX9M A 0;
+  BX9N A 0;
+  BX9O A 0;
+  BX9P A 0;
+  BX9Q A 0;
+  BX9R A 0;
+  BX9S A 0;
+  BX9T A 0;
+  BX9U A 0;
+  BX9V A 0;
+  BXA0 A 0;
+  BXA1 A 0;
+  BXA2 A 0;
+  BXA3 A 0;
+  BXA4 A 0;
+  BXA5 A 0;
+  BXA6 A 0;
+  BXA7 A 0;
+  BXA8 A 0;
+  BXA9 A 0;
+  BXAA A 0;
+  BXAB A 0;
+  BXAC A 0;
+  BXAD A 0;
+  BXAE A 0;
+  BXAF A 0;
+  BXAG A 0;
+  BXAH A 0;
+  BXAI A 0;
+  BXAJ A 0;
+  BXAK A 0;
+  BXAL A 0;
+  BXAM A 0;
+  BXAN A 0;
+  BXAO A 0;
+  BXAP A 0;
+  BXAQ A 0;
+  BXAR A 0;
+  BXAS A 0;
+  BXAT A 0;
+  BXAU A 0;
+  BXAV A 0;
+  BXB0 A 0;
+  BXB1 A 0;
+  BXB2 A 0;
+  BXB3 A 0;
+  BXB4 A 0;
+  BXB5 A 0;
+  BXB6 A 0;
+  BXB7 A 0;
+  BXB8 A 0;
+  BXB9 A 0;
+  BXBA A 0;
+  BXBB A 0;
+  BXBC A 0;
+  BXBD A 0;
+  BXBE A 0;
+  BXBF A 0;
+  BXBG A 0;
+  BXBH A 0;
+  BXBI A 0;
+  BXBJ A 0;
+  BXBK A 0;
+  BXBL A 0;
+  BXBM A 0;
+  BXBN A 0;
+  BXBO A 0;
+  BXBP A 0;
+  BXBQ A 0;
+  BXBR A 0;
+  BXBS A 0;
+  BXBT A 0;
+  BXBU A 0;
+  BXBV A 0;
+  BXC0 A 0;
+  BXC1 A 0;
+  BXC2 A 0;
+  BXC3 A 0;
+  BXC4 A 0;
+  BXC5 A 0;
+  BXC6 A 0;
+  BXC7 A 0;
+  BXC8 A 0;
+  BXC9 A 0;
+  BXCA A 0;
+  BXCB A 0;
+  BXCC A 0;
+  BXCD A 0;
+  BXCE A 0;
+  BXCF A 0;
+  BXCG A 0;
+  BXCH A 0;
+  BXCI A 0;
+  BXCJ A 0;
+  BXCK A 0;
+  BXCL A 0;
+  BXCM A 0;
+  BXCN A 0;
+  BXCO A 0;
+  BXCP A 0;
+  BXCQ A 0;
+  BXCR A 0;
+  BXCS A 0;
+  BXCT A 0;
+  BXCU A 0;
+  BXCV A 0;
+  BXD0 A 0;
+  BXD1 A 0;
+  BXD2 A 0;
+  BXD3 A 0;
+  BXD4 A 0;
+  BXD5 A 0;
+  BXD6 A 0;
+  BXD7 A 0;
+  BXD8 A 0;
+  BXD9 A 0;
+  BXDA A 0;
+  BXDB A 0;
+  BXDC A 0;
+  BXDD A 0;
+  BXDE A 0;
+  BXDF A 0;
+  BXDG A 0;
+  BXDH A 0;
+  BXDI A 0;
+  BXDJ A 0;
+  BXDK A 0;
+  BXDL A 0;
+  BXDM A 0;
+  BXDN A 0;
+  BXDO A 0;
+  BXDP A 0;
+  BXDQ A 0;
+  BXDR A 0;
+  BXDS A 0;
+  BXDT A 0;
+  BXDU A 0;
+  BXDV A 0;
+  BXE0 A 0;
+  BXE1 A 0;
+  BXE2 A 0;
+  BXE3 A 0;
+  BXE4 A 0;
+  BXE5 A 0;
+  BXE6 A 0;
+  BXE7 A 0;
+  BXE8 A 0;
+  BXE9 A 0;
+  BXEA A 0;
+  BXEB A 0;
+  BXEC A 0;
+  BXED A 0;
+  BXEE A 0;
+  BXEF A 0;
+  BXEG A 0;
+  BXEH A 0;
+  BXEI A 0;
+  BXEJ A 0;
+  BXEK A 0;
+  BXEL A 0;
+  BXEM A 0;
+  BXEN A 0;
+  BXEO A 0;
+  BXEP A 0;
+  BXEQ A 0;
+  BXER A 0;
+  BXES A 0;
+  BXET A 0;
+  BXEU A 0;
+  BXEV A 0;
+  BXF0 A 0;
+  BXF1 A 0;
+  BXF2 A 0;
+  BXF3 A 0;
+  BXF4 A 0;
+  BXF5 A 0;
+  BXF6 A 0;
+  BXF7 A 0;
+  BXF8 A 0;
+  BXF9 A 0;
+  BXFA A 0;
+  BXFB A 0;
+  BXFC A 0;
+  BXFD A 0;
+  BXFE A 0;
+  BXFF A 0;
+  BXFG A 0;
+  BXFH A 0;
+  BXFI A 0;
+  BXFJ A 0;
+  BXFK A 0;
+  BXFL A 0;
+  BXFM A 0;
+  BXFN A 0;
+  BXFO A 0;
+  BXFP A 0;
+  BXFQ A 0;
+  BXFR A 0;
+  BXFS A 0;
+  BXFT A 0;
+  BXFU A 0;
+  BXFV A 0;
+  BXG0 A 0;
+  BXG1 A 0;
+  BXG2 A 0;
+  BXG3 A 0;
+  BXG4 A 0;
+  BXG5 A 0;
+  BXG6 A 0;
+  BXG7 A 0;
+  BXG8 A 0;
+  BXG9 A 0;
+  BXGA A 0;
+  BXGB A 0;
+  BXGC A 0;
+  BXGD A 0;
+  BXGE A 0;
+  BXGF A 0;
+  BXGG A 0;
+  BXGH A 0;
+  BXGI A 0;
+  BXGJ A 0;
+  BXGK A 0;
+  BXGL A 0;
+  BXGM A 0;
+  BXGN A 0;
+  BXGO A 0;
+  BXGP A 0;
+  BXGQ A 0;
+  BXGR A 0;
+  BXGS A 0;
+  BXGT A 0;
+  BXGU A 0;
+  BXGV A 0;
+  BXH0 A 0;
+  BXH1 A 0;
+  BXH2 A 0;
+  BXH3 A 0;
+  BXH4 A 0;
+  BXH5 A 0;
+  BXH6 A 0;
+  BXH7 A 0;
+  BXH8 A 0;
+  BXH9 A 0;
+  BXHA A 0;
+  BXHB A 0;
+  BXHC A 0;
+  BXHD A 0;
+  BXHE A 0;
+  BXHF A 0;
+  BXHG A 0;
+  BXHH A 0;
+  BXHI A 0;
+  BXHJ A 0;
+  BXHK A 0;
+  BXHL A 0;
+  BXHM A 0;
+  BXHN A 0;
+  BXHO A 0;
+  BXHP A 0;
+  BXHQ A 0;
+  BXHR A 0;
+  BXHS A 0;
+  BXHT A 0;
+  BXHU A 0;
+  BXHV A 0;
+  BXI0 A 0;
+  BXI1 A 0;
+  BXI2 A 0;
+  BXI3 A 0;
+  BXI4 A 0;
+  BXI5 A 0;
+  BXI6 A 0;
+  BXI7 A 0;
+  BXI8 A 0;
+  BXI9 A 0;
+  BXIA A 0;
+  BXIB A 0;
+  BXIC A 0;
+  BXID A 0;
+  BXIE A 0;
+  BXIF A 0;
+  BXIG A 0;
+  BXIH A 0;
+  BXII A 0;
+  BXIJ A 0;
+  BXIK A 0;
+  BXIL A 0;
+  BXIM A 0;
+  BXIN A 0;
+  BXIO A 0;
+  BXIP A 0;
+  BXIQ A 0;
+  BXIR A 0;
+  BXIS A 0;
+  BXIT A 0;
+  BXIU A 0;
+  BXIV A 0;
+  BXJ0 A 0;
+  BXJ1 A 0;
+  BXJ2 A 0;
+  BXJ3 A 0;
+  BXJ4 A 0;
+  BXJ5 A 0;
+  BXJ6 A 0;
+  BXJ7 A 0;
+  BXJ8 A 0;
+  BXJ9 A 0;
+  BXJA A 0;
+  BXJB A 0;
+  BXJC A 0;
+  BXJD A 0;
+  BXJE A 0;
+  BXJF A 0;
+  BXJG A 0;
+  BXJH A 0;
+  BXJI A 0;
+  BXJJ A 0;
+  BXJK A 0;
+  BXJL A 0;
+  BXJM A 0;
+  BXJN A 0;
+  BXJO A 0;
+  BXJP A 0;
+  BXJQ A 0;
+  BXJR A 0;
+  BXJS A 0;
+  BXJT A 0;
+  BXJU A 0;
+  BXJV A 0;
+  BXK0 A 0;
+  BXK1 A 0;
+  BXK2 A 0;
+  BXK3 A 0;
+  BXK4 A 0;
+  BXK5 A 0;
+  BXK6 A 0;
+  BXK7 A 0;
+  BXK8 A 0;
+  BXK9 A 0;
+  BXKA A 0;
+  BXKB A 0;
+  BXKC A 0;
+  BXKD A 0;
+  BXKE A 0;
+  BXKF A 0;
+  BXKG A 0;
+  BXKH A 0;
+  BXKI A 0;
+  BXKJ A 0;
+  BXKK A 0;
+  BXKL A 0;
+  BXKM A 0;
+  BXKN A 0;
+  BXKO A 0;
+  BXKP A 0;
+  BXKQ A 0;
+  BXKR A 0;
+  BXKS A 0;
+  BXKT A 0;
+  BXKU A 0;
+  BXKV A 0;
+  BXL0 A 0;
+  BXL1 A 0;
+  BXL2 A 0;
+  BXL3 A 0;
+  BXL4 A 0;
+  BXL5 A 0;
+  BXL6 A 0;
+  BXL7 A 0;
+  BXL8 A 0;
+  BXL9 A 0;
+  BXLA A 0;
+  BXLB A 0;
+  BXLC A 0;
+  BXLD A 0;
+  BXLE A 0;
+  BXLF A 0;
+  BXLG A 0;
+  BXLH A 0;
+  BXLI A 0;
+  BXLJ A 0;
+  BXLK A 0;
+  BXLL A 0;
+  BXLM A 0;
+  BXLN A 0;
+  BXLO A 0;
+  BXLP A 0;
+  BXLQ A 0;
+  BXLR A 0;
+  BXLS A 0;
+  BXLT A 0;
+  BXLU A 0;
+  BXLV A 0;
+  BXM0 A 0;
+  BXM1 A 0;
+  BXM2 A 0;
+  BXM3 A 0;
+  BXM4 A 0;
+  BXM5 A 0;
+  BXM6 A 0;
+  BXM7 A 0;
+  BXM8 A 0;
+  BXM9 A 0;
+  BXMA A 0;
+  BXMB A 0;
+  BXMC A 0;
+  BXMD A 0;
+  BXME A 0;
+  BXMF A 0;
+  BXMG A 0;
+  BXMH A 0;
+  BXMI A 0;
+  BXMJ A 0;
+  BXMK A 0;
+  BXML A 0;
+  BXMM A 0;
+  BXMN A 0;
+  BXMO A 0;
+  BXMP A 0;
+  BXMQ A 0;
+  BXMR A 0;
+  BXMS A 0;
+  BXMT A 0;
+  BXMU A 0;
+  BXMV A 0;
+  BXN0 A 0;
+  BXN1 A 0;
+  BXN2 A 0;
+  BXN3 A 0;
+  BXN4 A 0;
+  BXN5 A 0;
+  BXN6 A 0;
+  BXN7 A 0;
+  BXN8 A 0;
+  BXN9 A 0;
+  BXNA A 0;
+  BXNB A 0;
+  BXNC A 0;
+  BXND A 0;
+  BXNE A 0;
+  BXNF A 0;
+  BXNG A 0;
+  BXNH A 0;
+  BXNI A 0;
+  BXNJ A 0;
+  BXNK A 0;
+  BXNL A 0;
+  BXNM A 0;
+  BXNN A 0;
+  BXNO A 0;
+  BXNP A 0;
+  BXNQ A 0;
+  BXNR A 0;
+  BXNS A 0;
+  BXNT A 0;
+  BXNU A 0;
+  BXNV A 0;
+  BXO0 A 0;
+  BXO1 A 0;
+  BXO2 A 0;
+  BXO3 A 0;
+  BXO4 A 0;
+  BXO5 A 0;
+  BXO6 A 0;
+  BXO7 A 0;
+  BXO8 A 0;
+  BXO9 A 0;
+  BXOA A 0;
+  BXOB A 0;
+  BXOC A 0;
+  BXOD A 0;
+  BXOE A 0;
+  BXOF A 0;
+  BXOG A 0;
+  BXOH A 0;
+  BXOI A 0;
+  BXOJ A 0;
+  BXOK A 0;
+  BXOL A 0;
+  BXOM A 0;
+  BXON A 0;
+  BXOO A 0;
+  BXOP A 0;
+  BXOQ A 0;
+  BXOR A 0;
+  BXOS A 0;
+  BXOT A 0;
+  BXOU A 0;
+  BXOV A 0;
+  BXP0 A 0;
+  BXP1 A 0;
+  BXP2 A 0;
+  BXP3 A 0;
+  BXP4 A 0;
+  BXP5 A 0;
+  BXP6 A 0;
+  BXP7 A 0;
+  BXP8 A 0;
+  BXP9 A 0;
+  BXPA A 0;
+  BXPB A 0;
+  BXPC A 0;
+  BXPD A 0;
+  BXPE A 0;
+  BXPF A 0;
+  BXPG A 0;
+  BXPH A 0;
+  BXPI A 0;
+  BXPJ A 0;
+  BXPK A 0;
+  BXPL A 0;
+  BXPM A 0;
+  BXPN A 0;
+  BXPO A 0;
+  BXPP A 0;
+  BXPQ A 0;
+  BXPR A 0;
+  BXPS A 0;
+  BXPT A 0;
+  BXPU A 0;
+  BXPV A 0;
+  BXQ0 A 0;
+  BXQ1 A 0;
+  BXQ2 A 0;
+  BXQ3 A 0;
+  BXQ4 A 0;
+  BXQ5 A 0;
+  BXQ6 A 0;
+  BXQ7 A 0;
+  BXQ8 A 0;
+  BXQ9 A 0;
+  BXQA A 0;
+  BXQB A 0;
+  BXQC A 0;
+  BXQD A 0;
+  BXQE A 0;
+  BXQF A 0;
+  BXQG A 0;
+  BXQH A 0;
+  BXQI A 0;
+  BXQJ A 0;
+  BXQK A 0;
+  BXQL A 0;
+  BXQM A 0;
+  BXQN A 0;
+  BXQO A 0;
+  BXQP A 0;
+  BXQQ A 0;
+  BXQR A 0;
+  BXQS A 0;
+  BXQT A 0;
+  BXQU A 0;
+  BXQV A 0;
+  BXR0 A 0;
+  BXR1 A 0;
+  BXR2 A 0;
+  BXR3 A 0;
+  BXR4 A 0;
+  BXR5 A 0;
+  BXR6 A 0;
+  BXR7 A 0;
+  BXR8 A 0;
+  BXR9 A 0;
+  BXRA A 0;
+  BXRB A 0;
+  BXRC A 0;
+  BXRD A 0;
+  BXRE A 0;
+  BXRF A 0;
+  BXRG A 0;
+  BXRH A 0;
+  BXRI A 0;
+  BXRJ A 0;
+  BXRK A 0;
+  BXRL A 0;
+  BXRM A 0;
+  BXRN A 0;
+  BXRO A 0;
+  BXRP A 0;
+  BXRQ A 0;
+  BXRR A 0;
+  BXRS A 0;
+  BXRT A 0;
+  BXRU A 0;
+  BXRV A 0;
+  BXS0 A 0;
+  BXS1 A 0;
+  BXS2 A 0;
+  BXS3 A 0;
+  BXS4 A 0;
+  BXS5 A 0;
+  BXS6 A 0;
+  BXS7 A 0;
+  BXS8 A 0;
+  BXS9 A 0;
+  BXSA A 0;
+  BXSB A 0;
+  BXSC A 0;
+  BXSD A 0;
+  BXSE A 0;
+  BXSF A 0;
+  BXSG A 0;
+  BXSH A 0;
+  BXSI A 0;
+  BXSJ A 0;
+  BXSK A 0;
+  BXSL A 0;
+  BXSM A 0;
+  BXSN A 0;
+  BXSO A 0;
+  BXSP A 0;
+  BXSQ A 0;
+  BXSR A 0;
+  BXSS A 0;
+  BXST A 0;
+  BXSU A 0;
+  BXSV A 0;
+  BXT0 A 0;
+  BXT1 A 0;
+  BXT2 A 0;
+  BXT3 A 0;
+  BXT4 A 0;
+  BXT5 A 0;
+  BXT6 A 0;
+  BXT7 A 0;
+  BXT8 A 0;
+  BXT9 A 0;
+  BXTA A 0;
+  BXTB A 0;
+  BXTC A 0;
+  BXTD A 0;
+  BXTE A 0;
+  BXTF A 0;
+  BXTG A 0;
+  BXTH A 0;
+  BXTI A 0;
+  BXTJ A 0;
+  BXTK A 0;
+  BXTL A 0;
+  BXTM A 0;
+  BXTN A 0;
+  BXTO A 0;
+  BXTP A 0;
+  BXTQ A 0;
+  BXTR A 0;
+  BXTS A 0;
+  BXTT A 0;
+  BXTU A 0;
+  BXTV A 0;
+  BXU0 A 0;
+  stop;
+Frame_0001:
+BXX1 A 8 BRIGHT;
+goto Frame_0002;
+Frame_0002:
+BXX2 A 8 BRIGHT;
+goto Frame_0003;
+Frame_0003:
+BXX3 A 8 BRIGHT;
+goto Frame_0004;
+Frame_0004:
+BXX4 A 8 BRIGHT;
+goto Frame_0005;
+Frame_0005:
+BXX5 A 8 BRIGHT;
+goto Frame_0006;
+Frame_0006:
+BXX6 A 8 BRIGHT;
+goto Frame_0007;
+Frame_0007:
+BXX7 A 8 BRIGHT;
+goto Frame_0008;
+Frame_0008:
+BXX8 A 8 BRIGHT;
+goto Frame_0009;
+Frame_0009:
+BXX9 A 8 BRIGHT;
+goto Frame_0010;
+Frame_0010:
+BXXA A 8 BRIGHT;
+goto Frame_0011;
+Frame_0011:
+BXXB A 8 BRIGHT;
+goto Frame_0012;
+Frame_0012:
+BXXC A 8 BRIGHT;
+goto Frame_0013;
+Frame_0013:
+BXXD A 8 BRIGHT;
+goto Frame_0014;
+Frame_0014:
+BXXE A 8 BRIGHT;
+goto Frame_0015;
+Frame_0015:
+BXXF A 8 BRIGHT;
+goto Frame_0016;
+Frame_0016:
+BXXG A 8 BRIGHT;
+goto Frame_0017;
+Frame_0017:
+BXXH A 8 BRIGHT;
+goto Frame_0018;
+Frame_0018:
+BXXI A 8 BRIGHT;
+goto Frame_0019;
+Frame_0019:
+BXXJ A 8 BRIGHT;
+goto Frame_0020;
+Frame_0020:
+BXXK A 8 BRIGHT;
+goto Frame_0021;
+Frame_0021:
+BXXL A 8 BRIGHT;
+goto Frame_0022;
+Frame_0022:
+BXXM A 8 BRIGHT;
+goto Frame_0023;
+Frame_0023:
+BXXN A 8 BRIGHT;
+goto Frame_0024;
+Frame_0024:
+BXXO A 8 BRIGHT;
+goto Frame_0025;
+Frame_0025:
+BXXP A 8 BRIGHT;
+goto Frame_0026;
+Frame_0026:
+BXXQ A 8 BRIGHT;
+goto Frame_0027;
+Frame_0027:
+BXXR A 8 BRIGHT;
+goto Frame_0028;
+Frame_0028:
+BXXS A 8 BRIGHT;
+goto Frame_0029;
+Frame_0029:
+BXXT A 8 BRIGHT;
+goto Frame_0030;
+Frame_0030:
+BXXU A 8 BRIGHT;
+goto Frame_0031;
+Frame_0031:
+BXXV A 8 BRIGHT;
+goto Frame_0032;
+Frame_0032:
+BX10 A 8 BRIGHT;
+goto Frame_0033;
+Frame_0033:
+BX11 A 8 BRIGHT;
+goto Frame_0034;
+Frame_0034:
+BX12 A 8 BRIGHT;
+goto Frame_0035;
+Frame_0035:
+BX13 A 8 BRIGHT;
+goto Frame_0036;
+Frame_0036:
+BX14 A 8 BRIGHT;
+goto Frame_0037;
+Frame_0037:
+BX15 A 8 BRIGHT;
+goto Frame_0038;
+Frame_0038:
+BX16 A 8 BRIGHT;
+goto Frame_0039;
+Frame_0039:
+BX17 A 8 BRIGHT;
+goto Frame_0040;
+Frame_0040:
+BX18 A 8 BRIGHT;
+goto Frame_0041;
+Frame_0041:
+BX19 A 8 BRIGHT;
+goto Frame_0042;
+Frame_0042:
+BX1A A 8 BRIGHT;
+goto Frame_0043;
+Frame_0043:
+BX1B A 8 BRIGHT;
+goto Frame_0044;
+Frame_0044:
+BX1C A 8 BRIGHT;
+goto Frame_0045;
+Frame_0045:
+BX1D A 8 BRIGHT;
+goto Frame_0046;
+Frame_0046:
+BX1E A 8 BRIGHT;
+goto Frame_0047;
+Frame_0047:
+BX1F A 8 BRIGHT;
+goto Frame_0048;
+Frame_0048:
+BX1G A 8 BRIGHT;
+goto Frame_0049;
+Frame_0049:
+BX1H A 8 BRIGHT;
+goto Frame_0050;
+Frame_0050:
+BX1I A 8 BRIGHT;
+goto Frame_0051;
+Frame_0051:
+BX1J A 8 BRIGHT;
+goto Frame_0052;
+Frame_0052:
+BX1K A 8 BRIGHT;
+goto Frame_0053;
+Frame_0053:
+BX1L A 8 BRIGHT;
+goto Frame_0054;
+Frame_0054:
+BX1M A 8 BRIGHT;
+goto Frame_0055;
+Frame_0055:
+BX1N A 8 BRIGHT;
+goto Frame_0056;
+Frame_0056:
+BX1O A 8 BRIGHT;
+goto Frame_0057;
+Frame_0057:
+BX1P A 8 BRIGHT;
+goto Frame_0058;
+Frame_0058:
+BX1Q A 8 BRIGHT;
+goto Frame_0059;
+Frame_0059:
+BX1R A 8 BRIGHT;
+goto Frame_0060;
+Frame_0060:
+BX1S A 8 BRIGHT;
+goto Frame_0061;
+Frame_0061:
+BX1T A 8 BRIGHT;
+goto Frame_0062;
+Frame_0062:
+BX1U A 8 BRIGHT;
+goto Frame_0063;
+Frame_0063:
+BX1V A 8 BRIGHT;
+goto Frame_0064;
+Frame_0064:
+BX20 A 8 BRIGHT;
+goto Frame_0065;
+Frame_0065:
+BX21 A 8 BRIGHT;
+goto Frame_0066;
+Frame_0066:
+BX22 A 8 BRIGHT;
+goto Frame_0067;
+Frame_0067:
+BX23 A 8 BRIGHT;
+goto Frame_0068;
+Frame_0068:
+BX24 A 8 BRIGHT;
+goto Frame_0069;
+Frame_0069:
+BX25 A 8 BRIGHT;
+goto Frame_0070;
+Frame_0070:
+BX26 A 8 BRIGHT;
+goto Frame_0071;
+Frame_0071:
+BX27 A 8 BRIGHT;
+goto Frame_0072;
+Frame_0072:
+BX28 A 8 BRIGHT;
+goto Frame_0073;
+Frame_0073:
+BX29 A 8 BRIGHT;
+goto Frame_0074;
+Frame_0074:
+BX2A A 8 BRIGHT;
+goto Frame_0075;
+Frame_0075:
+BX2B A 8 BRIGHT;
+goto Frame_0076;
+Frame_0076:
+BX2C A 8 BRIGHT;
+goto Frame_0077;
+Frame_0077:
+BX2D A 8 BRIGHT;
+goto Frame_0078;
+Frame_0078:
+BX2E A 8 BRIGHT;
+goto Frame_0079;
+Frame_0079:
+BX2F A 8 BRIGHT;
+goto Frame_0080;
+Frame_0080:
+BX2G A 8 BRIGHT;
+goto Frame_0081;
+Frame_0081:
+BX2H A 8 BRIGHT;
+goto Frame_0082;
+Frame_0082:
+BX2I A 8 BRIGHT;
+goto Frame_0083;
+Frame_0083:
+BX2J A 8 BRIGHT;
+goto Frame_0084;
+Frame_0084:
+BX2K A 8 BRIGHT;
+goto Frame_0085;
+Frame_0085:
+BX2L A 8 BRIGHT;
+goto Frame_0086;
+Frame_0086:
+BX2M A 8 BRIGHT;
+goto Frame_0087;
+Frame_0087:
+BX2N A 8 BRIGHT;
+goto Frame_0088;
+Frame_0088:
+BX2O A 8 BRIGHT;
+goto Frame_0089;
+Frame_0089:
+BX2P A 8 BRIGHT;
+goto Frame_0090;
+Frame_0090:
+BX2Q A 8 BRIGHT;
+goto Frame_0091;
+Frame_0091:
+BX2R A 8 BRIGHT;
+goto Frame_0092;
+Frame_0092:
+BX2S A 8 BRIGHT;
+goto Frame_0093;
+Frame_0093:
+BX2T A 8 BRIGHT;
+goto Frame_0094;
+Frame_0094:
+BX2U A 8 BRIGHT;
+goto Frame_0095;
+Frame_0095:
+BX2V A 8 BRIGHT;
+goto Frame_0096;
+Frame_0096:
+BX30 A 8 BRIGHT;
+goto Frame_0097;
+Frame_0097:
+BX31 A 8 BRIGHT;
+goto Frame_0098;
+Frame_0098:
+BX32 A 8 BRIGHT;
+goto Frame_0099;
+Frame_0099:
+BX33 A 8 BRIGHT;
+goto Frame_0100;
+Frame_0100:
+BX34 A 8 BRIGHT;
+goto Frame_0101;
+Frame_0101:
+BX35 A 8 BRIGHT;
+goto Frame_0102;
+Frame_0102:
+BX36 A 8 BRIGHT;
+goto Frame_0103;
+Frame_0103:
+BX37 A 8 BRIGHT;
+goto Frame_0104;
+Frame_0104:
+BX38 A 8 BRIGHT;
+goto Frame_0105;
+Frame_0105:
+BX39 A 8 BRIGHT;
+goto Frame_0106;
+Frame_0106:
+BX3A A 8 BRIGHT;
+goto Frame_0107;
+Frame_0107:
+BX3B A 8 BRIGHT;
+goto Frame_0108;
+Frame_0108:
+BX3C A 8 BRIGHT;
+goto Frame_0109;
+Frame_0109:
+BX3D A 8 BRIGHT;
+goto Frame_0110;
+Frame_0110:
+BX3E A 8 BRIGHT;
+goto Frame_0111;
+Frame_0111:
+BX3F A 8 BRIGHT;
+goto Frame_0112;
+Frame_0112:
+BX3G A 8 BRIGHT;
+goto Frame_0113;
+Frame_0113:
+BX3H A 8 BRIGHT;
+goto Frame_0114;
+Frame_0114:
+BX3I A 8 BRIGHT;
+goto Frame_0115;
+Frame_0115:
+BX3J A 8 BRIGHT;
+goto Frame_0116;
+Frame_0116:
+BX3K A 8 BRIGHT;
+goto Frame_0117;
+Frame_0117:
+BX3L A 8 BRIGHT;
+goto Frame_0118;
+Frame_0118:
+BX3M A 8 BRIGHT;
+goto Frame_0119;
+Frame_0119:
+BX3N A 8 BRIGHT;
+goto Frame_0120;
+Frame_0120:
+BX3O A 8 BRIGHT;
+goto Frame_0121;
+Frame_0121:
+BX3P A 8 BRIGHT;
+goto Frame_0122;
+Frame_0122:
+BX3Q A 8 BRIGHT;
+goto Frame_0123;
+Frame_0123:
+BX3R A 8 BRIGHT;
+goto Frame_0124;
+Frame_0124:
+BX3S A 8 BRIGHT;
+goto Frame_0125;
+Frame_0125:
+BX3T A 8 BRIGHT;
+goto Frame_0126;
+Frame_0126:
+BX3U A 8 BRIGHT;
+goto Frame_0127;
+Frame_0127:
+BX3V A 8 BRIGHT;
+goto Frame_0128;
+Frame_0128:
+BX40 A 8 BRIGHT;
+goto Frame_0129;
+Frame_0129:
+BX41 A 8 BRIGHT;
+goto Frame_0130;
+Frame_0130:
+BX42 A 8 BRIGHT;
+goto Frame_0131;
+Frame_0131:
+BX43 A 8 BRIGHT;
+goto Frame_0132;
+Frame_0132:
+BX44 A 8 BRIGHT;
+goto Frame_0133;
+Frame_0133:
+BX45 A 8 BRIGHT;
+goto Frame_0134;
+Frame_0134:
+BX46 A 8 BRIGHT;
+goto Frame_0135;
+Frame_0135:
+BX47 A 8 BRIGHT;
+goto Frame_0136;
+Frame_0136:
+BX48 A 8 BRIGHT;
+goto Frame_0137;
+Frame_0137:
+BX49 A 8 BRIGHT;
+goto Frame_0138;
+Frame_0138:
+BX4A A 8 BRIGHT;
+goto Frame_0139;
+Frame_0139:
+BX4B A 8 BRIGHT;
+goto Frame_0140;
+Frame_0140:
+BX4C A 8 BRIGHT;
+goto Frame_0141;
+Frame_0141:
+BX4D A 8 BRIGHT;
+goto Frame_0142;
+Frame_0142:
+BX4E A 8 BRIGHT;
+goto Frame_0143;
+Frame_0143:
+BX4F A 8 BRIGHT;
+goto Frame_0144;
+Frame_0144:
+BX4G A 8 BRIGHT;
+goto Frame_0145;
+Frame_0145:
+BX4H A 8 BRIGHT;
+goto Frame_0146;
+Frame_0146:
+BX4I A 8 BRIGHT;
+goto Frame_0147;
+Frame_0147:
+BX4J A 8 BRIGHT;
+goto Frame_0148;
+Frame_0148:
+BX4K A 8 BRIGHT;
+goto Frame_0149;
+Frame_0149:
+BX4L A 8 BRIGHT;
+goto Frame_0150;
+Frame_0150:
+BX4M A 8 BRIGHT;
+goto Frame_0151;
+Frame_0151:
+BX4N A 8 BRIGHT;
+goto Frame_0152;
+Frame_0152:
+BX4O A 8 BRIGHT;
+goto Frame_0153;
+Frame_0153:
+BX4P A 8 BRIGHT;
+goto Frame_0154;
+Frame_0154:
+BX4Q A 8 BRIGHT;
+goto Frame_0155;
+Frame_0155:
+BX4R A 8 BRIGHT;
+goto Frame_0156;
+Frame_0156:
+BX4S A 8 BRIGHT;
+goto Frame_0157;
+Frame_0157:
+BX4T A 8 BRIGHT;
+goto Frame_0158;
+Frame_0158:
+BX4U A 8 BRIGHT;
+goto Frame_0159;
+Frame_0159:
+BX4V A 8 BRIGHT;
+goto Frame_0160;
+Frame_0160:
+BX50 A 8 BRIGHT;
+goto Frame_0161;
+Frame_0161:
+BX51 A 8 BRIGHT;
+goto Frame_0162;
+Frame_0162:
+BX52 A 8 BRIGHT;
+goto Frame_0163;
+Frame_0163:
+BX53 A 8 BRIGHT;
+goto Frame_0164;
+Frame_0164:
+BX54 A 8 BRIGHT;
+goto Frame_0165;
+Frame_0165:
+BX55 A 8 BRIGHT;
+goto Frame_0166;
+Frame_0166:
+BX56 A 8 BRIGHT;
+goto Frame_0167;
+Frame_0167:
+BX57 A 8 BRIGHT;
+goto Frame_0168;
+Frame_0168:
+BX58 A 8 BRIGHT;
+goto Frame_0169;
+Frame_0169:
+BX59 A 8 BRIGHT;
+goto Frame_0170;
+Frame_0170:
+BX5A A 8 BRIGHT;
+goto Frame_0171;
+Frame_0171:
+BX5B A 8 BRIGHT;
+goto Frame_0172;
+Frame_0172:
+BX5C A 8 BRIGHT;
+goto Frame_0173;
+Frame_0173:
+BX5D A 8 BRIGHT;
+goto Frame_0174;
+Frame_0174:
+BX5E A 8 BRIGHT;
+goto Frame_0175;
+Frame_0175:
+BX5F A 8 BRIGHT;
+goto Frame_0176;
+Frame_0176:
+BX5G A 8 BRIGHT;
+goto Frame_0177;
+Frame_0177:
+BX5H A 8 BRIGHT;
+goto Frame_0178;
+Frame_0178:
+BX5I A 8 BRIGHT;
+goto Frame_0179;
+Frame_0179:
+BX5J A 8 BRIGHT;
+goto Frame_0180;
+Frame_0180:
+BX5K A 8 BRIGHT;
+goto Frame_0181;
+Frame_0181:
+BX5L A 8 BRIGHT;
+goto Frame_0182;
+Frame_0182:
+BX5M A 8 BRIGHT;
+goto Frame_0183;
+Frame_0183:
+BX5N A 8 BRIGHT;
+goto Frame_0184;
+Frame_0184:
+BX5O A 8 BRIGHT;
+goto Frame_0185;
+Frame_0185:
+BX5P A 8 BRIGHT;
+goto Frame_0186;
+Frame_0186:
+BX5Q A 8 BRIGHT;
+goto Frame_0187;
+Frame_0187:
+BX5R A 8 BRIGHT;
+goto Frame_0188;
+Frame_0188:
+BX5S A 8 BRIGHT;
+goto Frame_0189;
+Frame_0189:
+BX5T A 8 BRIGHT;
+goto Frame_0190;
+Frame_0190:
+BX5U A 8 BRIGHT;
+goto Frame_0191;
+Frame_0191:
+BX5V A 8 BRIGHT;
+goto Frame_0192;
+Frame_0192:
+BX60 A 8 BRIGHT;
+goto Frame_0193;
+Frame_0193:
+BX61 A 8 BRIGHT;
+goto Frame_0194;
+Frame_0194:
+BX62 A 8 BRIGHT;
+goto Frame_0195;
+Frame_0195:
+BX63 A 8 BRIGHT;
+goto Frame_0196;
+Frame_0196:
+BX64 A 8 BRIGHT;
+goto Frame_0197;
+Frame_0197:
+BX65 A 8 BRIGHT;
+goto Frame_0198;
+Frame_0198:
+BX66 A 8 BRIGHT;
+goto Frame_0199;
+Frame_0199:
+BX67 A 8 BRIGHT;
+goto Frame_0200;
+Frame_0200:
+BX68 A 8 BRIGHT;
+goto Frame_0201;
+Frame_0201:
+BX69 A 8 BRIGHT;
+goto Frame_0202;
+Frame_0202:
+BX6A A 8 BRIGHT;
+goto Frame_0203;
+Frame_0203:
+BX6B A 8 BRIGHT;
+goto Frame_0204;
+Frame_0204:
+BX6C A 8 BRIGHT;
+goto Frame_0205;
+Frame_0205:
+BX6D A 8 BRIGHT;
+goto Frame_0206;
+Frame_0206:
+BX6E A 8 BRIGHT;
+goto Frame_0207;
+Frame_0207:
+BX6F A 8 BRIGHT;
+goto Frame_0208;
+Frame_0208:
+BX6G A 8 BRIGHT;
+goto Frame_0209;
+Frame_0209:
+BX6H A 8 BRIGHT;
+goto Frame_0210;
+Frame_0210:
+BX6I A 8 BRIGHT;
+goto Frame_0211;
+Frame_0211:
+BX6J A 8 BRIGHT;
+goto Frame_0212;
+Frame_0212:
+BX6K A 8 BRIGHT;
+goto Frame_0213;
+Frame_0213:
+BX6L A 8 BRIGHT;
+goto Frame_0214;
+Frame_0214:
+BX6M A 8 BRIGHT;
+goto Frame_0215;
+Frame_0215:
+BX6N A 8 BRIGHT;
+goto Frame_0216;
+Frame_0216:
+BX6O A 8 BRIGHT;
+goto Frame_0217;
+Frame_0217:
+BX6P A 8 BRIGHT;
+goto Frame_0218;
+Frame_0218:
+BX6Q A 8 BRIGHT;
+goto Frame_0219;
+Frame_0219:
+BX6R A 8 BRIGHT;
+goto Frame_0220;
+Frame_0220:
+BX6S A 8 BRIGHT;
+goto Frame_0221;
+Frame_0221:
+BX6T A 8 BRIGHT;
+goto Frame_0222;
+Frame_0222:
+BX6U A 8 BRIGHT;
+goto Frame_0223;
+Frame_0223:
+BX6V A 8 BRIGHT;
+goto Frame_0224;
+Frame_0224:
+BX70 A 8 BRIGHT;
+goto Frame_0225;
+Frame_0225:
+BX71 A 8 BRIGHT;
+goto Frame_0226;
+Frame_0226:
+BX72 A 8 BRIGHT;
+goto Frame_0227;
+Frame_0227:
+BX73 A 8 BRIGHT;
+goto Frame_0228;
+Frame_0228:
+BX74 A 8 BRIGHT;
+goto Frame_0229;
+Frame_0229:
+BX75 A 8 BRIGHT;
+goto Frame_0230;
+Frame_0230:
+BX76 A 8 BRIGHT;
+goto Frame_0231;
+Frame_0231:
+BX77 A 8 BRIGHT;
+goto Frame_0232;
+Frame_0232:
+BX78 A 8 BRIGHT;
+goto Frame_0233;
+Frame_0233:
+BX79 A 8 BRIGHT;
+goto Frame_0234;
+Frame_0234:
+BX7A A 8 BRIGHT;
+goto Frame_0235;
+Frame_0235:
+BX7B A 8 BRIGHT;
+goto Frame_0236;
+Frame_0236:
+BX7C A 8 BRIGHT;
+goto Frame_0237;
+Frame_0237:
+BX7D A 8 BRIGHT;
+goto Frame_0238;
+Frame_0238:
+BX7E A 8 BRIGHT;
+goto Frame_0239;
+Frame_0239:
+BX7F A 8 BRIGHT;
+goto Frame_0240;
+Frame_0240:
+BX7G A 8 BRIGHT;
+goto Frame_0241;
+Frame_0241:
+BX7H A 8 BRIGHT;
+goto Frame_0242;
+Frame_0242:
+BX7I A 8 BRIGHT;
+goto Frame_0243;
+Frame_0243:
+BX7J A 8 BRIGHT;
+goto Frame_0244;
+Frame_0244:
+BX7K A 8 BRIGHT;
+goto Frame_0245;
+Frame_0245:
+BX7L A 8 BRIGHT;
+goto Frame_0246;
+Frame_0246:
+BX7M A 8 BRIGHT;
+goto Frame_0247;
+Frame_0247:
+BX7N A 8 BRIGHT;
+goto Frame_0248;
+Frame_0248:
+BX7O A 8 BRIGHT;
+goto Frame_0249;
+Frame_0249:
+BX7P A 8 BRIGHT;
+goto Frame_0250;
+Frame_0250:
+BX7Q A 8 BRIGHT;
+goto Frame_0251;
+Frame_0251:
+BX7R A 8 BRIGHT;
+goto Frame_0252;
+Frame_0252:
+BX7S A 8 BRIGHT;
+goto Frame_0253;
+Frame_0253:
+BX7T A 8 BRIGHT;
+goto Frame_0254;
+Frame_0254:
+BX7U A 8 BRIGHT;
+goto Frame_0255;
+Frame_0255:
+BX7V A 8 BRIGHT;
+goto Frame_0256;
+Frame_0256:
+BX80 A 8 BRIGHT;
+goto Frame_0257;
+Frame_0257:
+BX81 A 8 BRIGHT;
+goto Frame_0258;
+Frame_0258:
+BX82 A 8 BRIGHT;
+goto Frame_0259;
+Frame_0259:
+BX83 A 8 BRIGHT;
+goto Frame_0260;
+Frame_0260:
+BX84 A 8 BRIGHT;
+goto Frame_0261;
+Frame_0261:
+BX85 A 8 BRIGHT;
+goto Frame_0262;
+Frame_0262:
+BX86 A 8 BRIGHT;
+goto Frame_0263;
+Frame_0263:
+BX87 A 8 BRIGHT;
+goto Frame_0264;
+Frame_0264:
+BX88 A 8 BRIGHT;
+goto Frame_0265;
+Frame_0265:
+BX89 A 8 BRIGHT;
+goto Frame_0266;
+Frame_0266:
+BX8A A 8 BRIGHT;
+goto Frame_0267;
+Frame_0267:
+BX8B A 8 BRIGHT;
+goto Frame_0268;
+Frame_0268:
+BX8C A 8 BRIGHT;
+goto Frame_0269;
+Frame_0269:
+BX8D A 8 BRIGHT;
+goto Frame_0270;
+Frame_0270:
+BX8E A 8 BRIGHT;
+goto Frame_0271;
+Frame_0271:
+BX8F A 8 BRIGHT;
+goto Frame_0272;
+Frame_0272:
+BX8G A 8 BRIGHT;
+goto Frame_0273;
+Frame_0273:
+BX8H A 8 BRIGHT;
+goto Frame_0274;
+Frame_0274:
+BX8I A 8 BRIGHT;
+goto Frame_0275;
+Frame_0275:
+BX8J A 8 BRIGHT;
+goto Frame_0276;
+Frame_0276:
+BX8K A 8 BRIGHT;
+goto Frame_0277;
+Frame_0277:
+BX8L A 8 BRIGHT;
+goto Frame_0278;
+Frame_0278:
+BX8M A 8 BRIGHT;
+goto Frame_0279;
+Frame_0279:
+BX8N A 8 BRIGHT;
+goto Frame_0280;
+Frame_0280:
+BX8O A 8 BRIGHT;
+goto Frame_0281;
+Frame_0281:
+BX8P A 8 BRIGHT;
+goto Frame_0282;
+Frame_0282:
+BX8Q A 8 BRIGHT;
+goto Frame_0283;
+Frame_0283:
+BX8R A 8 BRIGHT;
+goto Frame_0284;
+Frame_0284:
+BX8S A 8 BRIGHT;
+goto Frame_0285;
+Frame_0285:
+BX8T A 8 BRIGHT;
+goto Frame_0286;
+Frame_0286:
+BX8U A 8 BRIGHT;
+goto Frame_0287;
+Frame_0287:
+BX8V A 8 BRIGHT;
+goto Frame_0288;
+Frame_0288:
+BX90 A 8 BRIGHT;
+goto Frame_0289;
+Frame_0289:
+BX91 A 8 BRIGHT;
+goto Frame_0290;
+Frame_0290:
+BX92 A 8 BRIGHT;
+goto Frame_0291;
+Frame_0291:
+BX93 A 8 BRIGHT;
+goto Frame_0292;
+Frame_0292:
+BX94 A 8 BRIGHT;
+goto Frame_0293;
+Frame_0293:
+BX95 A 8 BRIGHT;
+goto Frame_0294;
+Frame_0294:
+BX96 A 8 BRIGHT;
+goto Frame_0295;
+Frame_0295:
+BX97 A 8 BRIGHT;
+goto Frame_0296;
+Frame_0296:
+BX98 A 8 BRIGHT;
+goto Frame_0297;
+Frame_0297:
+BX99 A 8 BRIGHT;
+goto Frame_0298;
+Frame_0298:
+BX9A A 8 BRIGHT;
+goto Frame_0299;
+Frame_0299:
+BX9B A 8 BRIGHT;
+goto Frame_0300;
+Frame_0300:
+BX9C A 8 BRIGHT;
+goto Frame_0301;
+Frame_0301:
+BX9D A 8 BRIGHT;
+goto Frame_0302;
+Frame_0302:
+BX9E A 8 BRIGHT;
+goto Frame_0303;
+Frame_0303:
+BX9F A 8 BRIGHT;
+goto Frame_0304;
+Frame_0304:
+BX9G A 8 BRIGHT;
+goto Frame_0305;
+Frame_0305:
+BX9H A 8 BRIGHT;
+goto Frame_0306;
+Frame_0306:
+BX9I A 8 BRIGHT;
+goto Frame_0307;
+Frame_0307:
+BX9J A 8 BRIGHT;
+goto Frame_0308;
+Frame_0308:
+BX9K A 8 BRIGHT;
+goto Frame_0309;
+Frame_0309:
+BX9L A 8 BRIGHT;
+goto Frame_0310;
+Frame_0310:
+BX9M A 8 BRIGHT;
+goto Frame_0311;
+Frame_0311:
+BX9N A 8 BRIGHT;
+goto Frame_0312;
+Frame_0312:
+BX9O A 8 BRIGHT;
+goto Frame_0313;
+Frame_0313:
+BX9P A 8 BRIGHT;
+goto Frame_0314;
+Frame_0314:
+BX9Q A 8 BRIGHT;
+goto Frame_0315;
+Frame_0315:
+BX9R A 8 BRIGHT;
+goto Frame_0316;
+Frame_0316:
+BX9S A 8 BRIGHT;
+goto Frame_0317;
+Frame_0317:
+BX9T A 8 BRIGHT;
+goto Frame_0318;
+Frame_0318:
+BX9U A 8 BRIGHT;
+goto Frame_0319;
+Frame_0319:
+BX9V A 8 BRIGHT;
+goto Frame_0320;
+Frame_0320:
+BXA0 A 8 BRIGHT;
+goto Frame_0321;
+Frame_0321:
+BXA1 A 8 BRIGHT;
+goto Frame_0322;
+Frame_0322:
+BXA2 A 8 BRIGHT;
+goto Frame_0323;
+Frame_0323:
+BXA3 A 8 BRIGHT;
+goto Frame_0324;
+Frame_0324:
+BXA4 A 8 BRIGHT;
+goto Frame_0325;
+Frame_0325:
+BXA5 A 8 BRIGHT;
+goto Frame_0326;
+Frame_0326:
+BXA6 A 8 BRIGHT;
+goto Frame_0327;
+Frame_0327:
+BXA7 A 8 BRIGHT;
+goto Frame_0328;
+Frame_0328:
+BXA8 A 8 BRIGHT;
+goto Frame_0329;
+Frame_0329:
+BXA9 A 8 BRIGHT;
+goto Frame_0330;
+Frame_0330:
+BXAA A 8 BRIGHT;
+goto Frame_0331;
+Frame_0331:
+BXAB A 8 BRIGHT;
+goto Frame_0332;
+Frame_0332:
+BXAC A 8 BRIGHT;
+goto Frame_0333;
+Frame_0333:
+BXAD A 8 BRIGHT;
+goto Frame_0334;
+Frame_0334:
+BXAE A 8 BRIGHT;
+goto Frame_0335;
+Frame_0335:
+BXAF A 8 BRIGHT;
+goto Frame_0336;
+Frame_0336:
+BXAG A 8 BRIGHT;
+goto Frame_0337;
+Frame_0337:
+BXAH A 8 BRIGHT;
+goto Frame_0338;
+Frame_0338:
+BXAI A 8 BRIGHT;
+goto Frame_0339;
+Frame_0339:
+BXAJ A 8 BRIGHT;
+goto Frame_0340;
+Frame_0340:
+BXAK A 8 BRIGHT;
+goto Frame_0341;
+Frame_0341:
+BXAL A 8 BRIGHT;
+goto Frame_0342;
+Frame_0342:
+BXAM A 8 BRIGHT;
+goto Frame_0343;
+Frame_0343:
+BXAN A 8 BRIGHT;
+goto Frame_0344;
+Frame_0344:
+BXAO A 8 BRIGHT;
+goto Frame_0345;
+Frame_0345:
+BXAP A 8 BRIGHT;
+goto Frame_0346;
+Frame_0346:
+BXAQ A 8 BRIGHT;
+goto Frame_0347;
+Frame_0347:
+BXAR A 8 BRIGHT;
+goto Frame_0348;
+Frame_0348:
+BXAS A 8 BRIGHT;
+goto Frame_0349;
+Frame_0349:
+BXAT A 8 BRIGHT;
+goto Frame_0350;
+Frame_0350:
+BXAU A 8 BRIGHT;
+goto Frame_0351;
+Frame_0351:
+BXAV A 8 BRIGHT;
+goto Frame_0352;
+Frame_0352:
+BXB0 A 8 BRIGHT;
+goto Frame_0353;
+Frame_0353:
+BXB1 A 8 BRIGHT;
+goto Frame_0354;
+Frame_0354:
+BXB2 A 8 BRIGHT;
+goto Frame_0355;
+Frame_0355:
+BXB3 A 8 BRIGHT;
+goto Frame_0356;
+Frame_0356:
+BXB4 A 8 BRIGHT;
+goto Frame_0357;
+Frame_0357:
+BXB5 A 8 BRIGHT;
+goto Frame_0358;
+Frame_0358:
+BXB6 A 8 BRIGHT;
+goto Frame_0359;
+Frame_0359:
+BXB7 A 8 BRIGHT;
+goto Frame_0360;
+Frame_0360:
+BXB8 A 8 BRIGHT;
+goto Frame_0361;
+Frame_0361:
+BXB9 A 8 BRIGHT;
+goto Frame_0362;
+Frame_0362:
+BXBA A 8 BRIGHT;
+goto Frame_0363;
+Frame_0363:
+BXBB A 8 BRIGHT;
+goto Frame_0364;
+Frame_0364:
+BXBC A 8 BRIGHT;
+goto Frame_0365;
+Frame_0365:
+BXBD A 8 BRIGHT;
+goto Frame_0366;
+Frame_0366:
+BXBE A 8 BRIGHT;
+goto Frame_0367;
+Frame_0367:
+BXBF A 8 BRIGHT;
+goto Frame_0368;
+Frame_0368:
+BXBG A 8 BRIGHT;
+goto Frame_0369;
+Frame_0369:
+BXBH A 8 BRIGHT;
+goto Frame_0370;
+Frame_0370:
+BXBI A 8 BRIGHT;
+goto Frame_0371;
+Frame_0371:
+BXBJ A 8 BRIGHT;
+goto Frame_0372;
+Frame_0372:
+BXBK A 8 BRIGHT;
+goto Frame_0373;
+Frame_0373:
+BXBL A 8 BRIGHT;
+goto Frame_0374;
+Frame_0374:
+BXBM A 8 BRIGHT;
+goto Frame_0375;
+Frame_0375:
+BXBN A 8 BRIGHT;
+goto Frame_0376;
+Frame_0376:
+BXBO A 8 BRIGHT;
+goto Frame_0377;
+Frame_0377:
+BXBP A 8 BRIGHT;
+goto Frame_0378;
+Frame_0378:
+BXBQ A 8 BRIGHT;
+goto Frame_0379;
+Frame_0379:
+BXBR A 8 BRIGHT;
+goto Frame_0380;
+Frame_0380:
+BXBS A 8 BRIGHT;
+goto Frame_0381;
+Frame_0381:
+BXBT A 8 BRIGHT;
+goto Frame_0382;
+Frame_0382:
+BXBU A 8 BRIGHT;
+goto Frame_0383;
+Frame_0383:
+BXBV A 8 BRIGHT;
+goto Frame_0384;
+Frame_0384:
+BXC0 A 8 BRIGHT;
+goto Frame_0385;
+Frame_0385:
+BXC1 A 8 BRIGHT;
+goto Frame_0386;
+Frame_0386:
+BXC2 A 8 BRIGHT;
+goto Frame_0387;
+Frame_0387:
+BXC3 A 8 BRIGHT;
+goto Frame_0388;
+Frame_0388:
+BXC4 A 8 BRIGHT;
+goto Frame_0389;
+Frame_0389:
+BXC5 A 8 BRIGHT;
+goto Frame_0390;
+Frame_0390:
+BXC6 A 8 BRIGHT;
+goto Frame_0391;
+Frame_0391:
+BXC7 A 8 BRIGHT;
+goto Frame_0392;
+Frame_0392:
+BXC8 A 8 BRIGHT;
+goto Frame_0393;
+Frame_0393:
+BXC9 A 8 BRIGHT;
+goto Frame_0394;
+Frame_0394:
+BXCA A 8 BRIGHT;
+goto Frame_0395;
+Frame_0395:
+BXCB A 8 BRIGHT;
+goto Frame_0396;
+Frame_0396:
+BXCC A 8 BRIGHT;
+goto Frame_0397;
+Frame_0397:
+BXCD A 8 BRIGHT;
+goto Frame_0398;
+Frame_0398:
+BXCE A 8 BRIGHT;
+goto Frame_0399;
+Frame_0399:
+BXCF A 8 BRIGHT;
+goto Frame_0400;
+Frame_0400:
+BXCG A 8 BRIGHT;
+goto Frame_0401;
+Frame_0401:
+BXCH A 8 BRIGHT;
+goto Frame_0402;
+Frame_0402:
+BXCI A 8 BRIGHT;
+goto Frame_0403;
+Frame_0403:
+BXCJ A 8 BRIGHT;
+goto Frame_0404;
+Frame_0404:
+BXCK A 8 BRIGHT;
+goto Frame_0405;
+Frame_0405:
+BXCL A 8 BRIGHT;
+goto Frame_0406;
+Frame_0406:
+BXCM A 8 BRIGHT;
+goto Frame_0407;
+Frame_0407:
+BXCN A 8 BRIGHT;
+goto Frame_0408;
+Frame_0408:
+BXCO A 8 BRIGHT;
+goto Frame_0409;
+Frame_0409:
+BXCP A 8 BRIGHT;
+goto Frame_0410;
+Frame_0410:
+BXCQ A 8 BRIGHT;
+goto Frame_0411;
+Frame_0411:
+BXCR A 8 BRIGHT;
+goto Frame_0412;
+Frame_0412:
+BXCS A 8 BRIGHT;
+goto Frame_0413;
+Frame_0413:
+BXCT A 8 BRIGHT;
+goto Frame_0414;
+Frame_0414:
+BXCU A 8 BRIGHT;
+goto Frame_0415;
+Frame_0415:
+BXCV A 8 BRIGHT;
+goto Frame_0416;
+Frame_0416:
+BXD0 A 8 BRIGHT;
+goto Frame_0417;
+Frame_0417:
+BXD1 A 8 BRIGHT;
+goto Frame_0418;
+Frame_0418:
+BXD2 A 8 BRIGHT;
+goto Frame_0419;
+Frame_0419:
+BXD3 A 8 BRIGHT;
+goto Frame_0420;
+Frame_0420:
+BXD4 A 8 BRIGHT;
+goto Frame_0421;
+Frame_0421:
+BXD5 A 8 BRIGHT;
+goto Frame_0422;
+Frame_0422:
+BXD6 A 8 BRIGHT;
+goto Frame_0423;
+Frame_0423:
+BXD7 A 8 BRIGHT;
+goto Frame_0424;
+Frame_0424:
+BXD8 A 8 BRIGHT;
+goto Frame_0425;
+Frame_0425:
+BXD9 A 8 BRIGHT;
+goto Frame_0426;
+Frame_0426:
+BXDA A 8 BRIGHT;
+goto Frame_0427;
+Frame_0427:
+BXDB A 8 BRIGHT;
+goto Frame_0428;
+Frame_0428:
+BXDC A 8 BRIGHT;
+goto Frame_0429;
+Frame_0429:
+BXDD A 8 BRIGHT;
+goto Frame_0430;
+Frame_0430:
+BXDE A 8 BRIGHT;
+goto Frame_0431;
+Frame_0431:
+BXDF A 8 BRIGHT;
+goto Frame_0432;
+Frame_0432:
+BXDG A 8 BRIGHT;
+goto Frame_0433;
+Frame_0433:
+BXDH A 8 BRIGHT;
+goto Frame_0434;
+Frame_0434:
+BXDI A 8 BRIGHT;
+goto Frame_0435;
+Frame_0435:
+BXDJ A 8 BRIGHT;
+goto Frame_0436;
+Frame_0436:
+BXDK A 8 BRIGHT;
+goto Frame_0437;
+Frame_0437:
+BXDL A 8 BRIGHT;
+goto Frame_0438;
+Frame_0438:
+BXDM A 8 BRIGHT;
+goto Frame_0439;
+Frame_0439:
+BXDN A 8 BRIGHT;
+goto Frame_0440;
+Frame_0440:
+BXDO A 8 BRIGHT;
+goto Frame_0441;
+Frame_0441:
+BXDP A 8 BRIGHT;
+goto Frame_0442;
+Frame_0442:
+BXDQ A 8 BRIGHT;
+goto Frame_0443;
+Frame_0443:
+BXDR A 8 BRIGHT;
+goto Frame_0444;
+Frame_0444:
+BXDS A 8 BRIGHT;
+goto Frame_0445;
+Frame_0445:
+BXDT A 8 BRIGHT;
+goto Frame_0446;
+Frame_0446:
+BXDU A 8 BRIGHT;
+goto Frame_0447;
+Frame_0447:
+BXDV A 8 BRIGHT;
+goto Frame_0448;
+Frame_0448:
+BXE0 A 8 BRIGHT;
+goto Frame_0449;
+Frame_0449:
+BXE1 A 8 BRIGHT;
+goto Frame_0450;
+Frame_0450:
+BXE2 A 8 BRIGHT;
+goto Frame_0451;
+Frame_0451:
+BXE3 A 8 BRIGHT;
+goto Frame_0452;
+Frame_0452:
+BXE4 A 8 BRIGHT;
+goto Frame_0453;
+Frame_0453:
+BXE5 A 8 BRIGHT;
+goto Frame_0454;
+Frame_0454:
+BXE6 A 8 BRIGHT;
+goto Frame_0455;
+Frame_0455:
+BXE7 A 8 BRIGHT;
+goto Frame_0456;
+Frame_0456:
+BXE8 A 8 BRIGHT;
+goto Frame_0457;
+Frame_0457:
+BXE9 A 8 BRIGHT;
+goto Frame_0458;
+Frame_0458:
+BXEA A 8 BRIGHT;
+goto Frame_0459;
+Frame_0459:
+BXEB A 8 BRIGHT;
+goto Frame_0460;
+Frame_0460:
+BXEC A 8 BRIGHT;
+goto Frame_0461;
+Frame_0461:
+BXED A 8 BRIGHT;
+goto Frame_0462;
+Frame_0462:
+BXEE A 8 BRIGHT;
+goto Frame_0463;
+Frame_0463:
+BXEF A 8 BRIGHT;
+goto Frame_0464;
+Frame_0464:
+BXEG A 8 BRIGHT;
+goto Frame_0465;
+Frame_0465:
+BXEH A 8 BRIGHT;
+goto Frame_0466;
+Frame_0466:
+BXEI A 8 BRIGHT;
+goto Frame_0467;
+Frame_0467:
+BXEJ A 8 BRIGHT;
+goto Frame_0468;
+Frame_0468:
+BXEK A 8 BRIGHT;
+goto Frame_0469;
+Frame_0469:
+BXEL A 8 BRIGHT;
+goto Frame_0470;
+Frame_0470:
+BXEM A 8 BRIGHT;
+goto Frame_0471;
+Frame_0471:
+BXEN A 8 BRIGHT;
+goto Frame_0472;
+Frame_0472:
+BXEO A 8 BRIGHT;
+goto Frame_0473;
+Frame_0473:
+BXEP A 8 BRIGHT;
+goto Frame_0474;
+Frame_0474:
+BXEQ A 8 BRIGHT;
+goto Frame_0475;
+Frame_0475:
+BXER A 8 BRIGHT;
+goto Frame_0476;
+Frame_0476:
+BXES A 8 BRIGHT;
+goto Frame_0477;
+Frame_0477:
+BXET A 8 BRIGHT;
+goto Frame_0478;
+Frame_0478:
+BXEU A 8 BRIGHT;
+goto Frame_0479;
+Frame_0479:
+BXEV A 8 BRIGHT;
+goto Frame_0480;
+Frame_0480:
+BXF0 A 8 BRIGHT;
+goto Frame_0481;
+Frame_0481:
+BXF1 A 8 BRIGHT;
+goto Frame_0482;
+Frame_0482:
+BXF2 A 8 BRIGHT;
+goto Frame_0483;
+Frame_0483:
+BXF3 A 8 BRIGHT;
+goto Frame_0484;
+Frame_0484:
+BXF4 A 8 BRIGHT;
+goto Frame_0485;
+Frame_0485:
+BXF5 A 8 BRIGHT;
+goto Frame_0486;
+Frame_0486:
+BXF6 A 8 BRIGHT;
+goto Frame_0487;
+Frame_0487:
+BXF7 A 8 BRIGHT;
+goto Frame_0488;
+Frame_0488:
+BXF8 A 8 BRIGHT;
+goto Frame_0489;
+Frame_0489:
+BXF9 A 8 BRIGHT;
+goto Frame_0490;
+Frame_0490:
+BXFA A 8 BRIGHT;
+goto Frame_0491;
+Frame_0491:
+BXFB A 8 BRIGHT;
+goto Frame_0492;
+Frame_0492:
+BXFC A 8 BRIGHT;
+goto Frame_0493;
+Frame_0493:
+BXFD A 8 BRIGHT;
+goto Frame_0494;
+Frame_0494:
+BXFE A 8 BRIGHT;
+goto Frame_0495;
+Frame_0495:
+BXFF A 8 BRIGHT;
+goto Frame_0496;
+Frame_0496:
+BXFG A 8 BRIGHT;
+goto Frame_0497;
+Frame_0497:
+BXFH A 8 BRIGHT;
+goto Frame_0498;
+Frame_0498:
+BXFI A 8 BRIGHT;
+goto Frame_0499;
+Frame_0499:
+BXFJ A 8 BRIGHT;
+goto Frame_0500;
+Frame_0500:
+BXFK A 8 BRIGHT;
+goto Frame_0501;
+Frame_0501:
+BXFL A 8 BRIGHT;
+goto Frame_0502;
+Frame_0502:
+BXFM A 8 BRIGHT;
+goto Frame_0503;
+Frame_0503:
+BXFN A 8 BRIGHT;
+goto Frame_0504;
+Frame_0504:
+BXFO A 8 BRIGHT;
+goto Frame_0505;
+Frame_0505:
+BXFP A 8 BRIGHT;
+goto Frame_0506;
+Frame_0506:
+BXFQ A 8 BRIGHT;
+goto Frame_0507;
+Frame_0507:
+BXFR A 8 BRIGHT;
+goto Frame_0508;
+Frame_0508:
+BXFS A 8 BRIGHT;
+goto Frame_0509;
+Frame_0509:
+BXFT A 8 BRIGHT;
+goto Frame_0510;
+Frame_0510:
+BXFU A 8 BRIGHT;
+goto Frame_0511;
+Frame_0511:
+BXFV A 8 BRIGHT;
+goto Frame_0512;
+Frame_0512:
+BXG0 A 8 BRIGHT;
+goto Frame_0513;
+Frame_0513:
+BXG1 A 8 BRIGHT;
+goto Frame_0514;
+Frame_0514:
+BXG2 A 8 BRIGHT;
+goto Frame_0515;
+Frame_0515:
+BXG3 A 8 BRIGHT;
+goto Frame_0516;
+Frame_0516:
+BXG4 A 8 BRIGHT;
+goto Frame_0517;
+Frame_0517:
+BXG5 A 8 BRIGHT;
+goto Frame_0518;
+Frame_0518:
+BXG6 A 8 BRIGHT;
+goto Frame_0519;
+Frame_0519:
+BXG7 A 8 BRIGHT;
+goto Frame_0520;
+Frame_0520:
+BXG8 A 8 BRIGHT;
+goto Frame_0521;
+Frame_0521:
+BXG9 A 8 BRIGHT;
+goto Frame_0522;
+Frame_0522:
+BXGA A 8 BRIGHT;
+goto Frame_0523;
+Frame_0523:
+BXGB A 8 BRIGHT;
+goto Frame_0524;
+Frame_0524:
+BXGC A 8 BRIGHT;
+goto Frame_0525;
+Frame_0525:
+BXGD A 8 BRIGHT;
+goto Frame_0526;
+Frame_0526:
+BXGE A 8 BRIGHT;
+goto Frame_0527;
+Frame_0527:
+BXGF A 8 BRIGHT;
+goto Frame_0528;
+Frame_0528:
+BXGG A 8 BRIGHT;
+goto Frame_0529;
+Frame_0529:
+BXGH A 8 BRIGHT;
+goto Frame_0530;
+Frame_0530:
+BXGI A 8 BRIGHT;
+goto Frame_0531;
+Frame_0531:
+BXGJ A 8 BRIGHT;
+goto Frame_0532;
+Frame_0532:
+BXGK A 8 BRIGHT;
+goto Frame_0533;
+Frame_0533:
+BXGL A 8 BRIGHT;
+goto Frame_0534;
+Frame_0534:
+BXGM A 8 BRIGHT;
+goto Frame_0535;
+Frame_0535:
+BXGN A 8 BRIGHT;
+goto Frame_0536;
+Frame_0536:
+BXGO A 8 BRIGHT;
+goto Frame_0537;
+Frame_0537:
+BXGP A 8 BRIGHT;
+goto Frame_0538;
+Frame_0538:
+BXGQ A 8 BRIGHT;
+goto Frame_0539;
+Frame_0539:
+BXGR A 8 BRIGHT;
+goto Frame_0540;
+Frame_0540:
+BXGS A 8 BRIGHT;
+goto Frame_0541;
+Frame_0541:
+BXGT A 8 BRIGHT;
+goto Frame_0542;
+Frame_0542:
+BXGU A 8 BRIGHT;
+goto Frame_0543;
+Frame_0543:
+BXGV A 8 BRIGHT;
+goto Frame_0544;
+Frame_0544:
+BXH0 A 8 BRIGHT;
+goto Frame_0545;
+Frame_0545:
+BXH1 A 8 BRIGHT;
+goto Frame_0546;
+Frame_0546:
+BXH2 A 8 BRIGHT;
+goto Frame_0547;
+Frame_0547:
+BXH3 A 8 BRIGHT;
+goto Frame_0548;
+Frame_0548:
+BXH4 A 8 BRIGHT;
+goto Frame_0549;
+Frame_0549:
+BXH5 A 8 BRIGHT;
+goto Frame_0550;
+Frame_0550:
+BXH6 A 8 BRIGHT;
+goto Frame_0551;
+Frame_0551:
+BXH7 A 8 BRIGHT;
+goto Frame_0552;
+Frame_0552:
+BXH8 A 8 BRIGHT;
+goto Frame_0553;
+Frame_0553:
+BXH9 A 8 BRIGHT;
+goto Frame_0554;
+Frame_0554:
+BXHA A 8 BRIGHT;
+goto Frame_0555;
+Frame_0555:
+BXHB A 8 BRIGHT;
+goto Frame_0556;
+Frame_0556:
+BXHC A 8 BRIGHT;
+goto Frame_0557;
+Frame_0557:
+BXHD A 8 BRIGHT;
+goto Frame_0558;
+Frame_0558:
+BXHE A 8 BRIGHT;
+goto Frame_0559;
+Frame_0559:
+BXHF A 8 BRIGHT;
+goto Frame_0560;
+Frame_0560:
+BXHG A 8 BRIGHT;
+goto Frame_0561;
+Frame_0561:
+BXHH A 8 BRIGHT;
+goto Frame_0562;
+Frame_0562:
+BXHI A 8 BRIGHT;
+goto Frame_0563;
+Frame_0563:
+BXHJ A 8 BRIGHT;
+goto Frame_0564;
+Frame_0564:
+BXHK A 8 BRIGHT;
+goto Frame_0565;
+Frame_0565:
+BXHL A 8 BRIGHT;
+goto Frame_0566;
+Frame_0566:
+BXHM A 8 BRIGHT;
+goto Frame_0567;
+Frame_0567:
+BXHN A 8 BRIGHT;
+goto Frame_0568;
+Frame_0568:
+BXHO A 8 BRIGHT;
+goto Frame_0569;
+Frame_0569:
+BXHP A 8 BRIGHT;
+goto Frame_0570;
+Frame_0570:
+BXHQ A 8 BRIGHT;
+goto Frame_0571;
+Frame_0571:
+BXHR A 8 BRIGHT;
+goto Frame_0572;
+Frame_0572:
+BXHS A 8 BRIGHT;
+goto Frame_0573;
+Frame_0573:
+BXHT A 8 BRIGHT;
+goto Frame_0574;
+Frame_0574:
+BXHU A 8 BRIGHT;
+goto Frame_0575;
+Frame_0575:
+BXHV A 8 BRIGHT;
+goto Frame_0576;
+Frame_0576:
+BXI0 A 8 BRIGHT;
+goto Frame_0577;
+Frame_0577:
+BXI1 A 8 BRIGHT;
+goto Frame_0578;
+Frame_0578:
+BXI2 A 8 BRIGHT;
+goto Frame_0579;
+Frame_0579:
+BXI3 A 8 BRIGHT;
+goto Frame_0580;
+Frame_0580:
+BXI4 A 8 BRIGHT;
+goto Frame_0581;
+Frame_0581:
+BXI5 A 8 BRIGHT;
+goto Frame_0582;
+Frame_0582:
+BXI6 A 8 BRIGHT;
+goto Frame_0583;
+Frame_0583:
+BXI7 A 8 BRIGHT;
+goto Frame_0584;
+Frame_0584:
+BXI8 A 8 BRIGHT;
+goto Frame_0585;
+Frame_0585:
+BXI9 A 8 BRIGHT;
+goto Frame_0586;
+Frame_0586:
+BXIA A 8 BRIGHT;
+goto Frame_0587;
+Frame_0587:
+BXIB A 8 BRIGHT;
+goto Frame_0588;
+Frame_0588:
+BXIC A 8 BRIGHT;
+goto Frame_0589;
+Frame_0589:
+BXID A 8 BRIGHT;
+goto Frame_0590;
+Frame_0590:
+BXIE A 8 BRIGHT;
+goto Frame_0591;
+Frame_0591:
+BXIF A 8 BRIGHT;
+goto Frame_0592;
+Frame_0592:
+BXIG A 8 BRIGHT;
+goto Frame_0593;
+Frame_0593:
+BXIH A 8 BRIGHT;
+goto Frame_0594;
+Frame_0594:
+BXII A 8 BRIGHT;
+goto Frame_0595;
+Frame_0595:
+BXIJ A 8 BRIGHT;
+goto Frame_0596;
+Frame_0596:
+BXIK A 8 BRIGHT;
+goto Frame_0597;
+Frame_0597:
+BXIL A 8 BRIGHT;
+goto Frame_0598;
+Frame_0598:
+BXIM A 8 BRIGHT;
+goto Frame_0599;
+Frame_0599:
+BXIN A 8 BRIGHT;
+goto Frame_0600;
+Frame_0600:
+BXIO A 8 BRIGHT;
+goto Frame_0601;
+Frame_0601:
+BXIP A 8 BRIGHT;
+goto Frame_0602;
+Frame_0602:
+BXIQ A 8 BRIGHT;
+goto Frame_0603;
+Frame_0603:
+BXIR A 8 BRIGHT;
+goto Frame_0604;
+Frame_0604:
+BXIS A 8 BRIGHT;
+goto Frame_0605;
+Frame_0605:
+BXIT A 8 BRIGHT;
+goto Frame_0606;
+Frame_0606:
+BXIU A 8 BRIGHT;
+goto Frame_0607;
+Frame_0607:
+BXIV A 8 BRIGHT;
+goto Frame_0608;
+Frame_0608:
+BXJ0 A 8 BRIGHT;
+goto Frame_0609;
+Frame_0609:
+BXJ1 A 8 BRIGHT;
+goto Frame_0610;
+Frame_0610:
+BXJ2 A 8 BRIGHT;
+goto Frame_0611;
+Frame_0611:
+BXJ3 A 8 BRIGHT;
+goto Frame_0612;
+Frame_0612:
+BXJ4 A 8 BRIGHT;
+goto Frame_0613;
+Frame_0613:
+BXJ5 A 8 BRIGHT;
+goto Frame_0614;
+Frame_0614:
+BXJ6 A 8 BRIGHT;
+goto Frame_0615;
+Frame_0615:
+BXJ7 A 8 BRIGHT;
+goto Frame_0616;
+Frame_0616:
+BXJ8 A 8 BRIGHT;
+goto Frame_0617;
+Frame_0617:
+BXJ9 A 8 BRIGHT;
+goto Frame_0618;
+Frame_0618:
+BXJA A 8 BRIGHT;
+goto Frame_0619;
+Frame_0619:
+BXJB A 8 BRIGHT;
+goto Frame_0620;
+Frame_0620:
+BXJC A 8 BRIGHT;
+goto Frame_0621;
+Frame_0621:
+BXJD A 8 BRIGHT;
+goto Frame_0622;
+Frame_0622:
+BXJE A 8 BRIGHT;
+goto Frame_0623;
+Frame_0623:
+BXJF A 8 BRIGHT;
+goto Frame_0624;
+Frame_0624:
+BXJG A 8 BRIGHT;
+goto Frame_0625;
+Frame_0625:
+BXJH A 8 BRIGHT;
+goto Frame_0626;
+Frame_0626:
+BXJI A 8 BRIGHT;
+goto Frame_0627;
+Frame_0627:
+BXJJ A 8 BRIGHT;
+goto Frame_0628;
+Frame_0628:
+BXJK A 8 BRIGHT;
+goto Frame_0629;
+Frame_0629:
+BXJL A 8 BRIGHT;
+goto Frame_0630;
+Frame_0630:
+BXJM A 8 BRIGHT;
+goto Frame_0631;
+Frame_0631:
+BXJN A 8 BRIGHT;
+goto Frame_0632;
+Frame_0632:
+BXJO A 8 BRIGHT;
+goto Frame_0633;
+Frame_0633:
+BXJP A 8 BRIGHT;
+goto Frame_0634;
+Frame_0634:
+BXJQ A 8 BRIGHT;
+goto Frame_0635;
+Frame_0635:
+BXJR A 8 BRIGHT;
+goto Frame_0636;
+Frame_0636:
+BXJS A 8 BRIGHT;
+goto Frame_0637;
+Frame_0637:
+BXJT A 8 BRIGHT;
+goto Frame_0638;
+Frame_0638:
+BXJU A 8 BRIGHT;
+goto Frame_0639;
+Frame_0639:
+BXJV A 8 BRIGHT;
+goto Frame_0640;
+Frame_0640:
+BXK0 A 8 BRIGHT;
+goto Frame_0641;
+Frame_0641:
+BXK1 A 8 BRIGHT;
+goto Frame_0642;
+Frame_0642:
+BXK2 A 8 BRIGHT;
+goto Frame_0643;
+Frame_0643:
+BXK3 A 8 BRIGHT;
+goto Frame_0644;
+Frame_0644:
+BXK4 A 8 BRIGHT;
+goto Frame_0645;
+Frame_0645:
+BXK5 A 8 BRIGHT;
+goto Frame_0646;
+Frame_0646:
+BXK6 A 8 BRIGHT;
+goto Frame_0647;
+Frame_0647:
+BXK7 A 8 BRIGHT;
+goto Frame_0648;
+Frame_0648:
+BXK8 A 8 BRIGHT;
+goto Frame_0649;
+Frame_0649:
+BXK9 A 8 BRIGHT;
+goto Frame_0650;
+Frame_0650:
+BXKA A 8 BRIGHT;
+goto Frame_0651;
+Frame_0651:
+BXKB A 8 BRIGHT;
+goto Frame_0652;
+Frame_0652:
+BXKC A 8 BRIGHT;
+goto Frame_0653;
+Frame_0653:
+BXKD A 8 BRIGHT;
+goto Frame_0654;
+Frame_0654:
+BXKE A 8 BRIGHT;
+goto Frame_0655;
+Frame_0655:
+BXKF A 8 BRIGHT;
+goto Frame_0656;
+Frame_0656:
+BXKG A 8 BRIGHT;
+goto Frame_0657;
+Frame_0657:
+BXKH A 8 BRIGHT;
+goto Frame_0658;
+Frame_0658:
+BXKI A 8 BRIGHT;
+goto Frame_0659;
+Frame_0659:
+BXKJ A 8 BRIGHT;
+goto Frame_0660;
+Frame_0660:
+BXKK A 8 BRIGHT;
+goto Frame_0661;
+Frame_0661:
+BXKL A 8 BRIGHT;
+goto Frame_0662;
+Frame_0662:
+BXKM A 8 BRIGHT;
+goto Frame_0663;
+Frame_0663:
+BXKN A 8 BRIGHT;
+goto Frame_0664;
+Frame_0664:
+BXKO A 8 BRIGHT;
+goto Frame_0665;
+Frame_0665:
+BXKP A 8 BRIGHT;
+goto Frame_0666;
+Frame_0666:
+BXKQ A 8 BRIGHT;
+goto Frame_0667;
+Frame_0667:
+BXKR A 8 BRIGHT;
+goto Frame_0668;
+Frame_0668:
+BXKS A 8 BRIGHT;
+goto Frame_0669;
+Frame_0669:
+BXKT A 8 BRIGHT;
+goto Frame_0670;
+Frame_0670:
+BXKU A 8 BRIGHT;
+goto Frame_0671;
+Frame_0671:
+BXKV A 8 BRIGHT;
+goto Frame_0672;
+Frame_0672:
+BXL0 A 8 BRIGHT;
+goto Frame_0673;
+Frame_0673:
+BXL1 A 8 BRIGHT;
+goto Frame_0674;
+Frame_0674:
+BXL2 A 8 BRIGHT;
+goto Frame_0675;
+Frame_0675:
+BXL3 A 8 BRIGHT;
+goto Frame_0676;
+Frame_0676:
+BXL4 A 8 BRIGHT;
+goto Frame_0677;
+Frame_0677:
+BXL5 A 8 BRIGHT;
+goto Frame_0678;
+Frame_0678:
+BXL6 A 8 BRIGHT;
+goto Frame_0679;
+Frame_0679:
+BXL7 A 8 BRIGHT;
+goto Frame_0680;
+Frame_0680:
+BXL8 A 8 BRIGHT;
+goto Frame_0681;
+Frame_0681:
+BXL9 A 8 BRIGHT;
+goto Frame_0682;
+Frame_0682:
+BXLA A 8 BRIGHT;
+goto Frame_0683;
+Frame_0683:
+BXLB A 8 BRIGHT;
+goto Frame_0684;
+Frame_0684:
+BXLC A 8 BRIGHT;
+goto Frame_0685;
+Frame_0685:
+BXLD A 8 BRIGHT;
+goto Frame_0686;
+Frame_0686:
+BXLE A 8 BRIGHT;
+goto Frame_0687;
+Frame_0687:
+BXLF A 8 BRIGHT;
+goto Frame_0688;
+Frame_0688:
+BXLG A 8 BRIGHT;
+goto Frame_0689;
+Frame_0689:
+BXLH A 8 BRIGHT;
+goto Frame_0690;
+Frame_0690:
+BXLI A 8 BRIGHT;
+goto Frame_0691;
+Frame_0691:
+BXLJ A 8 BRIGHT;
+goto Frame_0692;
+Frame_0692:
+BXLK A 8 BRIGHT;
+goto Frame_0693;
+Frame_0693:
+BXLL A 8 BRIGHT;
+goto Frame_0694;
+Frame_0694:
+BXLM A 8 BRIGHT;
+goto Frame_0695;
+Frame_0695:
+BXLN A 8 BRIGHT;
+goto Frame_0696;
+Frame_0696:
+BXLO A 8 BRIGHT;
+goto Frame_0697;
+Frame_0697:
+BXLP A 8 BRIGHT;
+goto Frame_0698;
+Frame_0698:
+BXLQ A 8 BRIGHT;
+goto Frame_0699;
+Frame_0699:
+BXLR A 8 BRIGHT;
+goto Frame_0700;
+Frame_0700:
+BXLS A 8 BRIGHT;
+goto Frame_0701;
+Frame_0701:
+BXLT A 8 BRIGHT;
+goto Frame_0702;
+Frame_0702:
+BXLU A 8 BRIGHT;
+goto Frame_0703;
+Frame_0703:
+BXLV A 8 BRIGHT;
+goto Frame_0704;
+Frame_0704:
+BXM0 A 8 BRIGHT;
+goto Frame_0705;
+Frame_0705:
+BXM1 A 8 BRIGHT;
+goto Frame_0706;
+Frame_0706:
+BXM2 A 8 BRIGHT;
+goto Frame_0707;
+Frame_0707:
+BXM3 A 8 BRIGHT;
+goto Frame_0708;
+Frame_0708:
+BXM4 A 8 BRIGHT;
+goto Frame_0709;
+Frame_0709:
+BXM5 A 8 BRIGHT;
+goto Frame_0710;
+Frame_0710:
+BXM6 A 8 BRIGHT;
+goto Frame_0711;
+Frame_0711:
+BXM7 A 8 BRIGHT;
+goto Frame_0712;
+Frame_0712:
+BXM8 A 8 BRIGHT;
+goto Frame_0713;
+Frame_0713:
+BXM9 A 8 BRIGHT;
+goto Frame_0714;
+Frame_0714:
+BXMA A 8 BRIGHT;
+goto Frame_0715;
+Frame_0715:
+BXMB A 8 BRIGHT;
+goto Frame_0716;
+Frame_0716:
+BXMC A 8 BRIGHT;
+goto Frame_0717;
+Frame_0717:
+BXMD A 8 BRIGHT;
+goto Frame_0718;
+Frame_0718:
+BXME A 8 BRIGHT;
+goto Frame_0719;
+Frame_0719:
+BXMF A 8 BRIGHT;
+goto Frame_0720;
+Frame_0720:
+BXMG A 8 BRIGHT;
+goto Frame_0721;
+Frame_0721:
+BXMH A 8 BRIGHT;
+goto Frame_0722;
+Frame_0722:
+BXMI A 8 BRIGHT;
+goto Frame_0723;
+Frame_0723:
+BXMJ A 8 BRIGHT;
+goto Frame_0724;
+Frame_0724:
+BXMK A 8 BRIGHT;
+goto Frame_0725;
+Frame_0725:
+BXML A 8 BRIGHT;
+goto Frame_0726;
+Frame_0726:
+BXMM A 8 BRIGHT;
+goto Frame_0727;
+Frame_0727:
+BXMN A 8 BRIGHT;
+goto Frame_0728;
+Frame_0728:
+BXMO A 8 BRIGHT;
+goto Frame_0729;
+Frame_0729:
+BXMP A 8 BRIGHT;
+goto Frame_0730;
+Frame_0730:
+BXMQ A 8 BRIGHT;
+goto Frame_0731;
+Frame_0731:
+BXMR A 8 BRIGHT;
+goto Frame_0732;
+Frame_0732:
+BXMS A 8 BRIGHT;
+goto Frame_0733;
+Frame_0733:
+BXMT A 8 BRIGHT;
+goto Frame_0734;
+Frame_0734:
+BXMU A 8 BRIGHT;
+goto Frame_0735;
+Frame_0735:
+BXMV A 8 BRIGHT;
+goto Frame_0736;
+Frame_0736:
+BXN0 A 8 BRIGHT;
+goto Frame_0737;
+Frame_0737:
+BXN1 A 8 BRIGHT;
+goto Frame_0738;
+Frame_0738:
+BXN2 A 8 BRIGHT;
+goto Frame_0739;
+Frame_0739:
+BXN3 A 8 BRIGHT;
+goto Frame_0740;
+Frame_0740:
+BXN4 A 8 BRIGHT;
+goto Frame_0741;
+Frame_0741:
+BXN5 A 8 BRIGHT;
+goto Frame_0742;
+Frame_0742:
+BXN6 A 8 BRIGHT;
+goto Frame_0743;
+Frame_0743:
+BXN7 A 8 BRIGHT;
+goto Frame_0744;
+Frame_0744:
+BXN8 A 8 BRIGHT;
+goto Frame_0745;
+Frame_0745:
+BXN9 A 8 BRIGHT;
+goto Frame_0746;
+Frame_0746:
+BXNA A 8 BRIGHT;
+goto Frame_0747;
+Frame_0747:
+BXNB A 8 BRIGHT;
+goto Frame_0748;
+Frame_0748:
+BXNC A 8 BRIGHT;
+goto Frame_0749;
+Frame_0749:
+BXND A 8 BRIGHT;
+goto Frame_0750;
+Frame_0750:
+BXNE A 8 BRIGHT;
+goto Frame_0751;
+Frame_0751:
+BXNF A 8 BRIGHT;
+goto Frame_0752;
+Frame_0752:
+BXNG A 8 BRIGHT;
+goto Frame_0753;
+Frame_0753:
+BXNH A 8 BRIGHT;
+goto Frame_0754;
+Frame_0754:
+BXNI A 8 BRIGHT;
+goto Frame_0755;
+Frame_0755:
+BXNJ A 8 BRIGHT;
+goto Frame_0756;
+Frame_0756:
+BXNK A 8 BRIGHT;
+goto Frame_0757;
+Frame_0757:
+BXNL A 8 BRIGHT;
+goto Frame_0758;
+Frame_0758:
+BXNM A 8 BRIGHT;
+goto Frame_0759;
+Frame_0759:
+BXNN A 8 BRIGHT;
+goto Frame_0760;
+Frame_0760:
+BXNO A 8 BRIGHT;
+goto Frame_0761;
+Frame_0761:
+BXNP A 8 BRIGHT;
+goto Frame_0762;
+Frame_0762:
+BXNQ A 8 BRIGHT;
+goto Frame_0763;
+Frame_0763:
+BXNR A 8 BRIGHT;
+goto Frame_0764;
+Frame_0764:
+BXNS A 8 BRIGHT;
+goto Frame_0765;
+Frame_0765:
+BXNT A 8 BRIGHT;
+goto Frame_0766;
+Frame_0766:
+BXNU A 8 BRIGHT;
+goto Frame_0767;
+Frame_0767:
+BXNV A 8 BRIGHT;
+goto Frame_0768;
+Frame_0768:
+BXO0 A 8 BRIGHT;
+goto Frame_0769;
+Frame_0769:
+BXO1 A 8 BRIGHT;
+goto Frame_0770;
+Frame_0770:
+BXO2 A 8 BRIGHT;
+goto Frame_0771;
+Frame_0771:
+BXO3 A 8 BRIGHT;
+goto Frame_0772;
+Frame_0772:
+BXO4 A 8 BRIGHT;
+goto Frame_0773;
+Frame_0773:
+BXO5 A 8 BRIGHT;
+goto Frame_0774;
+Frame_0774:
+BXO6 A 8 BRIGHT;
+goto Frame_0775;
+Frame_0775:
+BXO7 A 8 BRIGHT;
+goto Frame_0776;
+Frame_0776:
+BXO8 A 8 BRIGHT;
+goto Frame_0777;
+Frame_0777:
+BXO9 A 8 BRIGHT;
+goto Frame_0778;
+Frame_0778:
+BXOA A 8 BRIGHT;
+goto Frame_0779;
+Frame_0779:
+BXOB A 8 BRIGHT;
+goto Frame_0780;
+Frame_0780:
+BXOC A 8 BRIGHT;
+goto Frame_0781;
+Frame_0781:
+BXOD A 8 BRIGHT;
+goto Frame_0782;
+Frame_0782:
+BXOE A 8 BRIGHT;
+goto Frame_0783;
+Frame_0783:
+BXOF A 8 BRIGHT;
+goto Frame_0784;
+Frame_0784:
+BXOG A 8 BRIGHT;
+goto Frame_0785;
+Frame_0785:
+BXOH A 8 BRIGHT;
+goto Frame_0786;
+Frame_0786:
+BXOI A 8 BRIGHT;
+goto Frame_0787;
+Frame_0787:
+BXOJ A 8 BRIGHT;
+goto Frame_0788;
+Frame_0788:
+BXOK A 8 BRIGHT;
+goto Frame_0789;
+Frame_0789:
+BXOL A 8 BRIGHT;
+goto Frame_0790;
+Frame_0790:
+BXOM A 8 BRIGHT;
+goto Frame_0791;
+Frame_0791:
+BXON A 8 BRIGHT;
+goto Frame_0792;
+Frame_0792:
+BXOO A 8 BRIGHT;
+goto Frame_0793;
+Frame_0793:
+BXOP A 8 BRIGHT;
+goto Frame_0794;
+Frame_0794:
+BXOQ A 8 BRIGHT;
+goto Frame_0795;
+Frame_0795:
+BXOR A 8 BRIGHT;
+goto Frame_0796;
+Frame_0796:
+BXOS A 8 BRIGHT;
+goto Frame_0797;
+Frame_0797:
+BXOT A 8 BRIGHT;
+goto Frame_0798;
+Frame_0798:
+BXOU A 8 BRIGHT;
+goto Frame_0799;
+Frame_0799:
+BXOV A 8 BRIGHT;
+goto Frame_0800;
+Frame_0800:
+BXP0 A 8 BRIGHT;
+goto Frame_0801;
+Frame_0801:
+BXP1 A 8 BRIGHT;
+goto Frame_0802;
+Frame_0802:
+BXP2 A 8 BRIGHT;
+goto Frame_0803;
+Frame_0803:
+BXP3 A 8 BRIGHT;
+goto Frame_0804;
+Frame_0804:
+BXP4 A 8 BRIGHT;
+goto Frame_0805;
+Frame_0805:
+BXP5 A 8 BRIGHT;
+goto Frame_0806;
+Frame_0806:
+BXP6 A 8 BRIGHT;
+goto Frame_0807;
+Frame_0807:
+BXP7 A 8 BRIGHT;
+goto Frame_0808;
+Frame_0808:
+BXP8 A 8 BRIGHT;
+goto Frame_0809;
+Frame_0809:
+BXP9 A 8 BRIGHT;
+goto Frame_0810;
+Frame_0810:
+BXPA A 8 BRIGHT;
+goto Frame_0811;
+Frame_0811:
+BXPB A 8 BRIGHT;
+goto Frame_0812;
+Frame_0812:
+BXPC A 8 BRIGHT;
+goto Frame_0813;
+Frame_0813:
+BXPD A 8 BRIGHT;
+goto Frame_0814;
+Frame_0814:
+BXPE A 8 BRIGHT;
+goto Frame_0815;
+Frame_0815:
+BXPF A 8 BRIGHT;
+goto Frame_0816;
+Frame_0816:
+BXPG A 8 BRIGHT;
+goto Frame_0817;
+Frame_0817:
+BXPH A 8 BRIGHT;
+goto Frame_0818;
+Frame_0818:
+BXPI A 8 BRIGHT;
+goto Frame_0819;
+Frame_0819:
+BXPJ A 8 BRIGHT;
+goto Frame_0820;
+Frame_0820:
+BXPK A 8 BRIGHT;
+goto Frame_0821;
+Frame_0821:
+BXPL A 8 BRIGHT;
+goto Frame_0822;
+Frame_0822:
+BXPM A 8 BRIGHT;
+goto Frame_0823;
+Frame_0823:
+BXPN A 8 BRIGHT;
+goto Frame_0824;
+Frame_0824:
+BXPO A 8 BRIGHT;
+goto Frame_0825;
+Frame_0825:
+BXPP A 8 BRIGHT;
+goto Frame_0826;
+Frame_0826:
+BXPQ A 8 BRIGHT;
+goto Frame_0827;
+Frame_0827:
+BXPR A 8 BRIGHT;
+goto Frame_0828;
+Frame_0828:
+BXPS A 8 BRIGHT;
+goto Frame_0829;
+Frame_0829:
+BXPT A 8 BRIGHT;
+goto Frame_0830;
+Frame_0830:
+BXPU A 8 BRIGHT;
+goto Frame_0831;
+Frame_0831:
+BXPV A 8 BRIGHT;
+goto Frame_0832;
+Frame_0832:
+BXQ0 A 8 BRIGHT;
+goto Frame_0833;
+Frame_0833:
+BXQ1 A 8 BRIGHT;
+goto Frame_0834;
+Frame_0834:
+BXQ2 A 8 BRIGHT;
+goto Frame_0835;
+Frame_0835:
+BXQ3 A 8 BRIGHT;
+goto Frame_0836;
+Frame_0836:
+BXQ4 A 8 BRIGHT;
+goto Frame_0837;
+Frame_0837:
+BXQ5 A 8 BRIGHT;
+goto Frame_0838;
+Frame_0838:
+BXQ6 A 8 BRIGHT;
+goto Frame_0839;
+Frame_0839:
+BXQ7 A 8 BRIGHT;
+goto Frame_0840;
+Frame_0840:
+BXQ8 A 8 BRIGHT;
+goto Frame_0841;
+Frame_0841:
+BXQ9 A 8 BRIGHT;
+goto Frame_0842;
+Frame_0842:
+BXQA A 8 BRIGHT;
+goto Frame_0843;
+Frame_0843:
+BXQB A 8 BRIGHT;
+goto Frame_0844;
+Frame_0844:
+BXQC A 8 BRIGHT;
+goto Frame_0845;
+Frame_0845:
+BXQD A 8 BRIGHT;
+goto Frame_0846;
+Frame_0846:
+BXQE A 8 BRIGHT;
+goto Frame_0847;
+Frame_0847:
+BXQF A 8 BRIGHT;
+goto Frame_0848;
+Frame_0848:
+BXQG A 8 BRIGHT;
+goto Frame_0849;
+Frame_0849:
+BXQH A 8 BRIGHT;
+goto Frame_0850;
+Frame_0850:
+BXQI A 8 BRIGHT;
+goto Frame_0851;
+Frame_0851:
+BXQJ A 8 BRIGHT;
+goto Frame_0852;
+Frame_0852:
+BXQK A 8 BRIGHT;
+goto Frame_0853;
+Frame_0853:
+BXQL A 8 BRIGHT;
+goto Frame_0854;
+Frame_0854:
+BXQM A 8 BRIGHT;
+goto Frame_0855;
+Frame_0855:
+BXQN A 8 BRIGHT;
+goto Frame_0856;
+Frame_0856:
+BXQO A 8 BRIGHT;
+goto Frame_0857;
+Frame_0857:
+BXQP A 8 BRIGHT;
+goto Frame_0858;
+Frame_0858:
+BXQQ A 8 BRIGHT;
+goto Frame_0859;
+Frame_0859:
+BXQR A 8 BRIGHT;
+goto Frame_0860;
+Frame_0860:
+BXQS A 8 BRIGHT;
+goto Frame_0861;
+Frame_0861:
+BXQT A 8 BRIGHT;
+goto Frame_0862;
+Frame_0862:
+BXQU A 8 BRIGHT;
+goto Frame_0863;
+Frame_0863:
+BXQV A 8 BRIGHT;
+goto Frame_0864;
+Frame_0864:
+BXR0 A 8 BRIGHT;
+goto Frame_0865;
+Frame_0865:
+BXR1 A 8 BRIGHT;
+goto Frame_0866;
+Frame_0866:
+BXR2 A 8 BRIGHT;
+goto Frame_0867;
+Frame_0867:
+BXR3 A 8 BRIGHT;
+goto Frame_0868;
+Frame_0868:
+BXR4 A 8 BRIGHT;
+goto Frame_0869;
+Frame_0869:
+BXR5 A 8 BRIGHT;
+goto Frame_0870;
+Frame_0870:
+BXR6 A 8 BRIGHT;
+goto Frame_0871;
+Frame_0871:
+BXR7 A 8 BRIGHT;
+goto Frame_0872;
+Frame_0872:
+BXR8 A 8 BRIGHT;
+goto Frame_0873;
+Frame_0873:
+BXR9 A 8 BRIGHT;
+goto Frame_0874;
+Frame_0874:
+BXRA A 8 BRIGHT;
+goto Frame_0875;
+Frame_0875:
+BXRB A 8 BRIGHT;
+goto Frame_0876;
+Frame_0876:
+BXRC A 8 BRIGHT;
+goto Frame_0877;
+Frame_0877:
+BXRD A 8 BRIGHT;
+goto Frame_0878;
+Frame_0878:
+BXRE A 8 BRIGHT;
+goto Frame_0879;
+Frame_0879:
+BXRF A 8 BRIGHT;
+goto Frame_0880;
+Frame_0880:
+BXRG A 8 BRIGHT;
+goto Frame_0881;
+Frame_0881:
+BXRH A 8 BRIGHT;
+goto Frame_0882;
+Frame_0882:
+BXRI A 8 BRIGHT;
+goto Frame_0883;
+Frame_0883:
+BXRJ A 8 BRIGHT;
+goto Frame_0884;
+Frame_0884:
+BXRK A 8 BRIGHT;
+goto Frame_0885;
+Frame_0885:
+BXRL A 8 BRIGHT;
+goto Frame_0886;
+Frame_0886:
+BXRM A 8 BRIGHT;
+goto Frame_0887;
+Frame_0887:
+BXRN A 8 BRIGHT;
+goto Frame_0888;
+Frame_0888:
+BXRO A 8 BRIGHT;
+goto Frame_0889;
+Frame_0889:
+BXRP A 8 BRIGHT;
+goto Frame_0890;
+Frame_0890:
+BXRQ A 8 BRIGHT;
+goto Frame_0891;
+Frame_0891:
+BXRR A 8 BRIGHT;
+goto Frame_0892;
+Frame_0892:
+BXRS A 8 BRIGHT;
+goto Frame_0893;
+Frame_0893:
+BXRT A 8 BRIGHT;
+goto Frame_0894;
+Frame_0894:
+BXRU A 8 BRIGHT;
+goto Frame_0895;
+Frame_0895:
+BXRV A 8 BRIGHT;
+goto Frame_0896;
+Frame_0896:
+BXS0 A 8 BRIGHT;
+goto Frame_0897;
+Frame_0897:
+BXS1 A 8 BRIGHT;
+goto Frame_0898;
+Frame_0898:
+BXS2 A 8 BRIGHT;
+goto Frame_0899;
+Frame_0899:
+BXS3 A 8 BRIGHT;
+goto Frame_0900;
+Frame_0900:
+BXS4 A 8 BRIGHT;
+goto Frame_0901;
+Frame_0901:
+BXS5 A 8 BRIGHT;
+goto Frame_0902;
+Frame_0902:
+BXS6 A 8 BRIGHT;
+goto Frame_0903;
+Frame_0903:
+BXS7 A 8 BRIGHT;
+goto Frame_0904;
+Frame_0904:
+BXS8 A 8 BRIGHT;
+goto Frame_0905;
+Frame_0905:
+BXS9 A 8 BRIGHT;
+goto Frame_0906;
+Frame_0906:
+BXSA A 8 BRIGHT;
+goto Frame_0907;
+Frame_0907:
+BXSB A 8 BRIGHT;
+goto Frame_0908;
+Frame_0908:
+BXSC A 8 BRIGHT;
+goto Frame_0909;
+Frame_0909:
+BXSD A 8 BRIGHT;
+goto Frame_0910;
+Frame_0910:
+BXSE A 8 BRIGHT;
+goto Frame_0911;
+Frame_0911:
+BXSF A 8 BRIGHT;
+goto Frame_0912;
+Frame_0912:
+BXSG A 8 BRIGHT;
+goto Frame_0913;
+Frame_0913:
+BXSH A 8 BRIGHT;
+goto Frame_0914;
+Frame_0914:
+BXSI A 8 BRIGHT;
+goto Frame_0915;
+Frame_0915:
+BXSJ A 8 BRIGHT;
+goto Frame_0916;
+Frame_0916:
+BXSK A 8 BRIGHT;
+goto Frame_0917;
+Frame_0917:
+BXSL A 8 BRIGHT;
+goto Frame_0918;
+Frame_0918:
+BXSM A 8 BRIGHT;
+goto Frame_0919;
+Frame_0919:
+BXSN A 8 BRIGHT;
+goto Frame_0920;
+Frame_0920:
+BXSO A 8 BRIGHT;
+goto Frame_0921;
+Frame_0921:
+BXSP A 8 BRIGHT;
+goto Frame_0922;
+Frame_0922:
+BXSQ A 8 BRIGHT;
+goto Frame_0923;
+Frame_0923:
+BXSR A 8 BRIGHT;
+goto Frame_0924;
+Frame_0924:
+BXSS A 8 BRIGHT;
+goto Frame_0925;
+Frame_0925:
+BXST A 8 BRIGHT;
+goto Frame_0926;
+Frame_0926:
+BXSU A 8 BRIGHT;
+goto Frame_0927;
+Frame_0927:
+BXSV A 8 BRIGHT;
+goto Frame_0928;
+Frame_0928:
+BXT0 A 8 BRIGHT;
+goto Frame_0929;
+Frame_0929:
+BXT1 A 8 BRIGHT;
+goto Frame_0930;
+Frame_0930:
+BXT2 A 8 BRIGHT;
+goto Frame_0931;
+Frame_0931:
+BXT3 A 8 BRIGHT;
+goto Frame_0932;
+Frame_0932:
+BXT4 A 8 BRIGHT;
+goto Frame_0933;
+Frame_0933:
+BXT5 A 8 BRIGHT;
+goto Frame_0934;
+Frame_0934:
+BXT6 A 8 BRIGHT;
+goto Frame_0935;
+Frame_0935:
+BXT7 A 8 BRIGHT;
+goto Frame_0936;
+Frame_0936:
+BXT8 A 8 BRIGHT;
+goto Frame_0937;
+Frame_0937:
+BXT9 A 8 BRIGHT;
+goto Frame_0938;
+Frame_0938:
+BXTA A 8 BRIGHT;
+goto Frame_0939;
+Frame_0939:
+BXTB A 8 BRIGHT;
+goto Frame_0940;
+Frame_0940:
+BXTC A 8 BRIGHT;
+goto Frame_0941;
+Frame_0941:
+BXTD A 8 BRIGHT;
+goto Frame_0942;
+Frame_0942:
+BXTE A 8 BRIGHT;
+goto Frame_0943;
+Frame_0943:
+BXTF A 8 BRIGHT;
+goto Frame_0944;
+Frame_0944:
+BXTG A 8 BRIGHT;
+goto Frame_0945;
+Frame_0945:
+BXTH A 8 BRIGHT;
+goto Frame_0946;
+Frame_0946:
+BXTI A 8 BRIGHT;
+goto Frame_0947;
+Frame_0947:
+BXTJ A 8 BRIGHT;
+goto Frame_0948;
+Frame_0948:
+BXTK A 8 BRIGHT;
+goto Frame_0949;
+Frame_0949:
+BXTL A 8 BRIGHT;
+goto Frame_0950;
+Frame_0950:
+BXTM A 8 BRIGHT;
+goto Frame_0951;
+Frame_0951:
+BXTN A 8 BRIGHT;
+goto Frame_0952;
+Frame_0952:
+BXTO A 8 BRIGHT;
+goto Frame_0953;
+Frame_0953:
+BXTP A 8 BRIGHT;
+goto Frame_0954;
+Frame_0954:
+BXTQ A 8 BRIGHT;
+goto Frame_0955;
+Frame_0955:
+BXTR A 8 BRIGHT;
+goto Frame_0956;
+Frame_0956:
+BXTS A 8 BRIGHT;
+goto Frame_0957;
+Frame_0957:
+BXTT A 8 BRIGHT;
+goto Frame_0958;
+Frame_0958:
+BXTU A 8 BRIGHT;
+goto Frame_0959;
+Frame_0959:
+BXTV A 8 BRIGHT;
+goto Frame_0960;
+Frame_0960:
+BXU0 A 8 BRIGHT;
+goto Frame_0000;
+// GENERATED DATA END
+	}
+}
+
+
+class VACBOTEmotionSystemReplacementHandler : StaticEventHandler
+{
+	override void OnRegister() {
+		console.printf("VACBOTEmotionSystemReplacementHandler registered");
+	}
+
+	override void CheckReplacement(ReplaceEvent e)
+	{
+		let cls = e.Replacee;
+		if (cls == 'VACBOTEmotionSystem')
+		{
+			console.printf("Replacing VACBOT emotion system with Bad Apple variant!!");
+			e.Replacement = 'VACBOT_ES_BadApple';
+		}
+	}
+}
