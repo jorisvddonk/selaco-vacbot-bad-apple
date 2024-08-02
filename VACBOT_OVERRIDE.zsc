@@ -1,14 +1,46 @@
-class VACBOT_ES_BadApple : actor replaces VACBOTEmotionSystem {
-	actor pairedLED;
+class VACBOT_ES_BadApple : Actor {
+  bool initialized;
+  int delay;
+  State Frame0;
+  Actor pairedLED;
 
 	void setEmotion(StateLabel emotionLabel, int overrideEmotion = 0) {
 		// intentionally left empty
 	}
 
-	override void tick() {
-		super.tick();
+  override void Tick() {
+    super.Tick();
+    if (delay < 5) {
+      delay = delay + 1;
+    } else {
+      delay = 0;
+      if (!initialized) {
+        // initialize!
+        Frame0 = FindState("Frame_0000");
+        setState(Frame0);
+        initialized = true;
+      } else {
+        // man behaviour when active:
+        if (CurState == Frame0) {
+          if (checkProximity("Dawn", 110, 1, CPXF_CHECKSIGHT)) {
+            console.printf("Bad apple!!");
+            A_PlaySound("badapple", CHAN_7, 0.7, 0, 2.1);
+            setState(FindState("Frame_0001"));
+          }
+        }
+        if (Master == NULL) {
+          // lost master; meaning the parent VACBOT got destroyed!
+          self.destroy();
+        }
+      }
+    }
 		A_Warp(AAPTR_MASTER, 3, 0, 5.5, 0, WARPF_NOCHECKPOSITION|WARPF_INTERPOLATE);
 	}
+
+  void destroy() {
+    A_StopSound(CHAN_7);
+    super.die(self, self);
+  }
 
 	default {
 		scale 0.4;
@@ -21,13 +53,7 @@ class VACBOT_ES_BadApple : actor replaces VACBOTEmotionSystem {
 				TNT1 A 0;
 				goto Frame_0000;
 			Frame_0000:
-				TNT1 A 5 {
-					if (checkProximity("Dawn", 110, 1, CPXF_CHECKSIGHT)) {
-						console.printf("Bad apple!!");
-						A_PlaySound("badapple", CHAN_AUTO, 0.7, 0, 2.1);
-						setStateLabel("Frame_0001");
-					}
-				}
+				TNT1 A 5;
 				loop;
 // GENERATED DATA BEGIN
 Precache:
@@ -3888,8 +3914,12 @@ class VACBOTEmotionSystemReplacementHandler : StaticEventHandler
 		let cls = e.Replacee;
 		if (cls == 'VACBOTEmotionSystem')
 		{
-			console.printf("Replacing VACBOT emotion system with Bad Apple variant!!");
-			e.Replacement = 'VACBOT_ES_BadApple';
+      if (Cvar.FindCVar('bad_apple_v_enabled').GetInt() == 1) {
+        console.printf("Replacing VACBOT emotion system with Bad Apple variant!!");
+        e.Replacement = 'VACBOT_ES_BadApple';
+      } else {
+        e.Replacement = 'VACBOTEmotionSystem';
+      }
 		}
 	}
 }
