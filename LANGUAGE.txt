@@ -1,0 +1,6 @@
+[enu default]
+
+BAD_APPLE_MOD_DESCRIPTION="Plays Bad Apple!! on the VAC-Bots";
+
+BAD_APPLE_TOGGLE_MOD__SETTING="Mod active";
+BAD_APPLE_TOGGLE_MOD__DESCRIPTION="Enables or disables the mod. Changing this requires a map transition/load!";

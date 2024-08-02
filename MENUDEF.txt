@@ -1,0 +1,10 @@
+AddOptionMenu "ModOptionsMenu"
+{
+    ModHeader "Bad Apple!! for VAC-Bots", "@jorisvddonk", "$BAD_APPLE_MOD_DESCRIPTION", "BAVACL", ""
+    Submenu "Bad Apple!! for VAC-Bots - Options", "BadAppleOptions"
+}
+
+OptionMenu "BadAppleOptions"
+{
+    TooltipOption "$BAD_APPLE_TOGGLE_MOD__SETTING", "$BAD_APPLE_TOGGLE_MOD__DESCRIPTION", "", "bad_apple_v_enabled", YesNo
+}
